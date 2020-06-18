@@ -2,6 +2,7 @@
 /target/ 
 .classpath
 .project
+/out/
 ### IntelliJ IDEA ###
 .idea
 *.iws
