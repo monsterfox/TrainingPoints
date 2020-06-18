@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jspUpload" />
+        <module name="paginator" />
+        <module name="servlet3Upload" />
+        <module name="uploadFileAndImage" />
+        <module name="verificationCode" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jspUpload" target="1.8" />
+      <module name="paginator" target="1.8" />
+      <module name="servlet3Upload" target="1.8" />
+      <module name="TrainingPoints" target="1.8" />
+      <module name="uploadFileAndImage" target="1.8" />
+      <module name="verificationCode" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

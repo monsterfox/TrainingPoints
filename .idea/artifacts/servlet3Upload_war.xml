@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="servlet3Upload:war">
+    <output-path>$PROJECT_DIR$/servlet3Upload/target</output-path>
+    <root id="archive" name="TrainingPoints.war">
+      <element id="artifact" artifact-name="servlet3Upload:war exploded" />
+    </root>
+  </artifact>
+</component>
