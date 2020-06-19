@@ -15,12 +15,21 @@ import java.util.List;
 public class BookDao {
     public PageModel<Book> findData(String pageNo, String pageSize){
         PageModel<Book> pageModel=null;
+
+        if (pageSize == null) {// 为空时设置默认页大小为10
+            pageSize = "10";
+        }
+        if (pageNo == null) {// 为空时设置默认为第1页
+            pageNo = "1";
+        }
+
         Connection conn= DBUtil.getConnection();
         String sql="select * from books limit ?,?";
         PreparedStatement pst=null;  
         ResultSet rs=null;
         Book rec=null;
         List<Book> list=new ArrayList<Book>();
+
         try {  
               pst=conn.prepareStatement(sql); 
               //pstm.setInt(1, (pageNo-1)*pageSize); 
@@ -65,10 +74,9 @@ public class BookDao {
         }  
         System.out.print("当前页:"+pageModel.getPageNo()+" ");  
         System.out.print("共"+pageModel.getTotalPages()+"页  ");  
-        System.out.print("首页:"+pageModel.getTopPageNo()+" ");  
-        System.out.print("上一页:"+pageModel.getPreviousPageNo()+" ");  
+        System.out.print("上一页:"+pageModel.getPreviousPageNo()+" ");
         System.out.print("下一页:"+pageModel.getNextPageNo()+" ");  
-        System.out.print("尾页:"+pageModel.getBottomPageNo()+" ");  
+        System.out.print("尾页:"+pageModel.getTotalPages()+" ");
         System.out.print("共"+pageModel.getTotalRecords()+"条记录");  
         System.out.println();  
     }

@@ -29,16 +29,11 @@ public class BookServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         String pageSize = request.getParameter("pageSize");// 每页显示行数
         String pageNo = request.getParameter("pageNo");// 当前显示页次
-        if (pageSize == null) {// 为空时设置默认页大小为10
-            pageSize = "10";
-        }
-        if (pageNo == null) {// 为空时设置默认为第1页
-            pageNo = "1";
-        }
+
         //System.out.println("pageNo="+pageNo+"pageSize="+pageSize);
         // 保存分页参数，传递给下一个页面
-        request.setAttribute("pageSize", pageSize);
-        request.setAttribute("pageNo", pageNo);
+//        request.setAttribute("pageSize", pageSize);
+//        request.setAttribute("pageNo", pageNo);
         //新建Dao对象，获取pageModel
         BookDao client=new BookDao();
         PageModel<Book> pageModel=client.findData(pageNo,pageSize);

@@ -5,8 +5,8 @@
 <%@ page import="com.foxbill.domain.PageModel" %>
 
 <%
-    String pageSize = (String) request.getAttribute("pageSize");
-    String pageNo = (String) request.getAttribute("pageNo");
+//    String pageSize = (String) request.getAttribute("pageSize");
+//    String pageNo = (String) request.getAttribute("pageNo");
     PageModel<Book> pageModel=(PageModel<Book>) request.getAttribute("pageModel");
     List<Book> list=pageModel.getList();
 %>
@@ -14,7 +14,7 @@
 <html>
 <head>
     <!-- <script src="/haha/js/jquery.min.js" type="text/javascript"></script> -->
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Insert title here</title>
     <style type="text/css">
         table{
@@ -47,7 +47,10 @@
 
     <%
         if(list==null||list.size()<1){
-    %><p align="center">还没有任何数据！</p>
+    %>
+    <tr>
+        <td colspan="5" align="center">还没有任何数据！</td>
+    </tr>
     <%}else{
         for(Book rec:list){
     %>
@@ -71,20 +74,20 @@
                 共<%=pageModel.getTotalRecords()%>条/<a>每页</a>
                 <select name="pageSize"
                         onchange="document.all.pageNo.value='1';document.all.form1.submit();">
-                    <option value="5" <%if(pageSize.equals("5")){%>
+                    <option value="5" <%if(pageModel.getPageSize() == 5){%>
                             selected="selected" <%}%>>5</option>
-                    <option value="10" <%if(pageSize.equals("10")){%>
+                    <option value="10" <%if(pageModel.getPageSize() == 10){%>
                             selected="selected" <%}%>>10</option>
-                    <option value="20" <%if(pageSize.equals("20")){%>
+                    <option value="20" <%if(pageModel.getPageSize() == 20){%>
                             selected="selected" <%}%>>20</option>
-                    <option value="30" <%if(pageSize.equals("30")){%>
+                    <option value="30" <%if(pageModel.getPageSize() == 30){%>
                             selected="selected" <%}%>>30</option>
                 </select>条</TD>
             <TD align="right">
-                <a href="javascript:document.all.pageNo.value='<%= pageModel.getTopPageNo() %>';document.all.form1.submit();">首页</a>
+                <a href="javascript:document.all.pageNo.value='1';document.all.form1.submit();">首页</a>
                 <a href="javascript:document.all.pageNo.value='<%= pageModel.getPreviousPageNo() %>';document.all.form1.submit();">上一页</a>
                 <a href="javascript:document.all.pageNo.value='<%= pageModel.getNextPageNo()%>';document.all.form1.submit();">下一页</a>
-                <a href="javascript:document.all.pageNo.value='<%= pageModel.getBottomPageNo()%>';document.all.form1.submit();">尾页</a>
+                <a href="javascript:document.all.pageNo.value='<%= pageModel.getTotalPages()%>';document.all.form1.submit();">尾页</a>
                 <a>第</a>
                 <select name="pageNo" onchange="document.all.form1.submit();">
                     <%
@@ -93,7 +96,7 @@
                     <%
                         for (int i = 1; i <= pageCount; i++) {
                     %>
-                    <option value="<%=i%>" <%if(pageNo.equals(i+"")){%>
+                    <option value="<%=i%>" <%if(pageModel.getPageNo() == i){%>
                             selected="selected" <%}%>><%=i%></option>
                     <%
                         }
