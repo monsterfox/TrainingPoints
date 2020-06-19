@@ -25,19 +25,19 @@ public class BookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //设置编码
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
+        //获取参数
         String pageSize = request.getParameter("pageSize");// 每页显示行数
         String pageNo = request.getParameter("pageNo");// 当前显示页次
 
-        //System.out.println("pageNo="+pageNo+"pageSize="+pageSize);
-        // 保存分页参数，传递给下一个页面
-//        request.setAttribute("pageSize", pageSize);
-//        request.setAttribute("pageNo", pageNo);
-        //新建Dao对象，获取pageModel
+        //新建Dao对象，获取pageModel分页模型
         BookDao client=new BookDao();
         PageModel<Book> pageModel=client.findData(pageNo,pageSize);
-        request.setAttribute("pageModel", pageModel);//前端获取这个值
+        //pageModel分页模型放入request作用域，供前端展示使用
+        request.setAttribute("pageModel", pageModel);
+        //转发到result.jsp页面进行数据展示（如果页面展示使用jstl,可以把页面地址改为result-jstl.jsp）
         request.getRequestDispatcher("result.jsp").forward(request, response);
     }
 

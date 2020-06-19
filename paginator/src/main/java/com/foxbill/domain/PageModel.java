@@ -9,18 +9,18 @@ import java.util.List;
  */  
 public class PageModel<E> {  
     //结果集  
-    private List<E> list;  
-    //查询记录数  
-    private int totalRecords;
-    //总页数
-    private int totalPages;
-    //每页显示记录数
-    private int pageSize;
+    private List<E> list;
     //当前页
     private int pageNo;
-    //上一页
+    //每页显示记录数
+    private int pageSize;
+    //查询记录数
+    private int totalRecords;
+    //总页数            （根据总记录数和每页记录数计算）
+    private int totalPages;
+    //上一页            （根据当前页计算）
     private int previousPageNo;
-    //下一页
+    //下一页            （根据当前页计算）
     private int nextPageNo;
 
     /** 
