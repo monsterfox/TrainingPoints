@@ -32,28 +32,13 @@ public class DBUtil {
     /**
      * 关闭相关流
      */
-    public static void close(ResultSet rs,Statement st,Connection conn) {
+    public static void close(ResultSet rs,Statement stmt,Connection conn) {
         try {
             if(rs!=null) {
                 rs.close();
             }
-            if(st!=null) {
-                st.close();
-            }
-            if(conn!=null) {
-                conn.close();
-            }
-        }catch(SQLException e) {
-            e.printStackTrace();
-        }
-    }
-    public static void closePst(ResultSet rs,PreparedStatement pst,Connection conn) {
-        try {
-            if(rs!=null) {
-                rs.close();
-            }
-            if(pst!=null) {
-                pst.close();
+            if(stmt!=null) {
+                stmt.close();
             }
             if(conn!=null) {
                 conn.close();

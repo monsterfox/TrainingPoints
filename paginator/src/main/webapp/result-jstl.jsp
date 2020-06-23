@@ -63,10 +63,10 @@
                 共${pageModel.totalRecords}条/<a>每页</a>
                 <select name="pageSize"
                         onchange="document.all.pageNo.value='1';document.all.form1.submit();">
-                    <option value="5" <c:if test="${pageSize == 5}">selected="selected"</c:if>>5</option>
-                    <option value="5" <c:if test="${pageSize == 10}">selected="selected"</c:if>>10</option>
-                    <option value="5" <c:if test="${pageSize == 20}">selected="selected"</c:if>>20</option>
-                    <option value="5" <c:if test="${pageSize == 30}">selected="selected"</c:if>>30</option>
+                    <option value="5" <c:if test="${pageModel.pageSize == 5}">selected="selected"</c:if>>5</option>
+                    <option value="10" <c:if test="${pageModel.pageSize == 10}">selected="selected"</c:if>>10</option>
+                    <option value="20" <c:if test="${pageModel.pageSize == 20}">selected="selected"</c:if>>20</option>
+                    <option value="30" <c:if test="${pageModel.pageSize == 30}">selected="selected"</c:if>>30</option>
                 </select>条</TD>
             <TD align="right">
                 <a href="javascript:document.all.pageNo.value='1';document.all.form1.submit();">首页</a>
@@ -81,7 +81,6 @@
                 </select><a>页</a>/共${pageModel.totalPages}页</TD>
         </TR>
     </TABLE>
-
 </form>
 </body>
 </html>

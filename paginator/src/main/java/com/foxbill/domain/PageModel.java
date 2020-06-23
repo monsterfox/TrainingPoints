@@ -8,14 +8,16 @@ import java.util.List;
  * 
  */  
 public class PageModel<E> {  
-    //结果集  
+    //结果集   --- 需要自己查询
     private List<E> list;
+    //查询总记录数  ---  需要自己查询
+    private int totalRecords;
+
     //当前页
     private int pageNo;
     //每页显示记录数
     private int pageSize;
-    //查询记录数
-    private int totalRecords;
+
     //总页数            （根据总记录数和每页记录数计算）
     private int totalPages;
     //上一页            （根据当前页计算）
@@ -28,7 +30,8 @@ public class PageModel<E> {
      * @return 
      */  
     public int getTotalPages() {  
-        return (totalRecords + pageSize - 1) / pageSize;  
+        return (totalRecords + pageSize - 1) / pageSize;
+        //return (totalRecords%pageSize == 0)?(totalRecords/pageSize):(totalRecords/pageSize+1);
     }  
 
     /** 

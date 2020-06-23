@@ -5,8 +5,6 @@
 <%@ page import="com.foxbill.domain.PageModel" %>
 
 <%
-//    String pageSize = (String) request.getAttribute("pageSize");
-//    String pageNo = (String) request.getAttribute("pageNo");
     PageModel<Book> pageModel=(PageModel<Book>) request.getAttribute("pageModel");
     List<Book> list=pageModel.getList();
 %>
@@ -67,11 +65,13 @@
     %>
 
 </table>
+<!--   提交:pageSize 和 pageNo   -->
 <form name="form1" action="${pageContext.request.contextPath}/getBook" method="post">
     <TABLE id="pageTable">
         <TR>
             <TD align="left">
                 共<%=pageModel.getTotalRecords()%>条/<a>每页</a>
+                <!-- 每页显示x条 -->
                 <select name="pageSize"
                         onchange="document.all.pageNo.value='1';document.all.form1.submit();">
                     <option value="5" <%if(pageModel.getPageSize() == 5){%>
@@ -82,13 +82,15 @@
                             selected="selected" <%}%>>20</option>
                     <option value="30" <%if(pageModel.getPageSize() == 30){%>
                             selected="selected" <%}%>>30</option>
-                </select>条</TD>
+                </select>条
+            </TD>
             <TD align="right">
                 <a href="javascript:document.all.pageNo.value='1';document.all.form1.submit();">首页</a>
                 <a href="javascript:document.all.pageNo.value='<%= pageModel.getPreviousPageNo() %>';document.all.form1.submit();">上一页</a>
                 <a href="javascript:document.all.pageNo.value='<%= pageModel.getNextPageNo()%>';document.all.form1.submit();">下一页</a>
                 <a href="javascript:document.all.pageNo.value='<%= pageModel.getTotalPages()%>';document.all.form1.submit();">尾页</a>
                 <a>第</a>
+                <!-- 第x页 -->
                 <select name="pageNo" onchange="document.all.form1.submit();">
                     <%
                         int pageCount = pageModel.getTotalPages();

@@ -26,7 +26,7 @@ public class BookDao {
 
         //连接数据库，查询分页相关数据
         Connection conn = DBUtil.getConnection();
-        String sql = "select * from books limit ?,?";
+        String sql = "select * from books limit ?,?";//第一个参数，代表从哪条记录开始；第二个参数，代表一共查询多少条记录。
         PreparedStatement pst = null;
         ResultSet rs = null;
         Book rec = null;
@@ -36,7 +36,7 @@ public class BookDao {
             //查询图书信息（集合）
             pst = conn.prepareStatement(sql);
             pst.setInt(1, (Integer.parseInt(pageNo) - 1) * Integer.parseInt(pageSize));
-            pst.setInt(2, Integer.parseInt(pageSize));
+            pst.setInt(2, Integer.parseInt(pageSize));//设置页容量(每页显示的记录数)
             rs = pst.executeQuery();
             while (rs.next()) {
                 rec = new Book();
@@ -47,6 +47,7 @@ public class BookDao {
                 rec.setCategory(rs.getString("category"));
                 list.add(rec);
             }
+
             //查询总记录数
             ResultSet rs2 = pst.executeQuery("select count(*) from books");
             int total = 0;
@@ -58,13 +59,14 @@ public class BookDao {
             pageModel = new PageModel<Book>();
             pageModel.setPageNo(Integer.parseInt(pageNo));//设置页码
             pageModel.setPageSize(Integer.parseInt(pageSize));//设置每页记录数
+
             pageModel.setTotalRecords(total);//设置总记录数
             pageModel.setList(list);//设置图书信息（集合）
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             //释放资源
-            DBUtil.closePst(rs, pst, conn);
+            DBUtil.close(rs, pst, conn);
         }
         return pageModel;
     }
@@ -85,6 +87,41 @@ public class BookDao {
         System.out.print("尾页:" + pageModel.getTotalPages() + " ");
         System.out.print("共" + pageModel.getTotalRecords() + "条记录");
         System.out.println();
+    }
+
+    /*
+        查询所有图书
+     */
+    public List<Book> findAllData() {
+        List<Book> list = new ArrayList<Book>();
+
+        //连接数据库，查询分页相关数据
+        Connection conn = DBUtil.getConnection();
+        String sql = "select * from books";
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        Book rec = null;
+
+        try {
+            //查询图书信息（集合）
+            pst = conn.prepareStatement(sql);
+            rs = pst.executeQuery();
+            while (rs.next()) {
+                rec = new Book();
+                rec.setId(rs.getInt("id"));
+                rec.setName(rs.getString("name"));
+                rec.setPrice(rs.getFloat("price"));
+                rec.setPnum(rs.getInt("pnum"));
+                rec.setCategory(rs.getString("category"));
+                list.add(rec);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //释放资源
+            DBUtil.close(rs, pst, conn);
+        }
+        return list;
     }
 
 }
