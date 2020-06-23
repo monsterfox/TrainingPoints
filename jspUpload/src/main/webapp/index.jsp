@@ -6,9 +6,11 @@
 </head>
 <body>
 <form action="uploadServlet" enctype="multipart/form-data" method="POST" >
-
+    <div>
+        用户名：<input type="text" name="username" />
+    </div>
     <div class="upload_box">
-        <b>上传图片</b>
+        <b>上传图片：</b>
         <input type="file" name="uploadFile" id="file" accept="image/*" onchange="imgChange(this);"/> <!--文件上传选择按钮-->
         <div id="preview">
             <img id="imghead" src="/style/images/blank.gif" width="260" height="180" /> <!--图片显示位置-->

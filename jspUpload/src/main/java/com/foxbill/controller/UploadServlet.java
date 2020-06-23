@@ -44,26 +44,14 @@ public class UploadServlet extends HttpServlet {
 
         // 配置上传参数
         DiskFileItemFactory factory = new DiskFileItemFactory();
-        // 设置内存临界值 - 超过后将产生临时文件并存储于临时目录中
-        factory.setSizeThreshold(MEMORY_THRESHOLD);
-        // 设置临时存储目录
-        factory.setRepository(new File(System.getProperty("java.io.tmpdir")));
-
+        factory.setSizeThreshold(MEMORY_THRESHOLD);// 设置内存临界值 - 超过后将产生临时文件并存储于临时目录中
+        factory.setRepository(new File(System.getProperty("java.io.tmpdir")));// 设置临时存储目录
         ServletFileUpload upload = new ServletFileUpload(factory);
-
-        // 设置最大文件上传值
-        upload.setFileSizeMax(MAX_FILE_SIZE);
-
-        // 设置最大请求值 (包含文件和表单数据)
-        upload.setSizeMax(MAX_REQUEST_SIZE);
-
-        // 中文处理
-        upload.setHeaderEncoding("UTF-8");
-
-        // 构造临时路径来存储上传的文件
-        // 这个路径相对当前应用的目录
-        String uploadPath = getServletContext().getRealPath("/") + UPLOAD_DIRECTORY;
-        System.out.println("uploadPath:"+uploadPath);
+        upload.setFileSizeMax(MAX_FILE_SIZE);// 设置最大文件上传值
+        upload.setSizeMax(MAX_REQUEST_SIZE);// 设置最大请求值 (包含文件和表单数据)
+        upload.setHeaderEncoding("UTF-8");// 中文处理
+        String uploadPath = getServletContext().getRealPath("/") + UPLOAD_DIRECTORY;// 构造临时路径来存储上传的文件
+        System.out.println("uploadPath:"+uploadPath);// 这个路径相对当前应用的目录
 
         // 如果目录不存在则创建
         File uploadDir = new File(uploadPath);
@@ -73,33 +61,32 @@ public class UploadServlet extends HttpServlet {
 
         try {
             // 解析请求的内容提取文件数据
-            @SuppressWarnings("unchecked")
             List<FileItem> formItems = upload.parseRequest(request);
 
             if (formItems != null && formItems.size() > 0) {
                 // 迭代表单数据
                 for (FileItem item : formItems) {
-                    // 处理不在表单中的字段
                     if (!item.isFormField()) {
+                        /* 如果是文件上传表单域 */
                         String fileName = new File(item.getName()).getName();
                         String filePath = uploadPath + File.separator + fileName;
-                        System.out.println("filePath:"+filePath);
                         File storeFile = new File(filePath);
-                        // 在控制台输出文件的上传路径
-                        System.out.println(filePath);
-                        // 保存文件到硬盘
-                        item.write(storeFile);
-                        request.setAttribute("message",
-                                "文件上传成功!");
+                        System.out.println("上传路径："+filePath);// 在控制台输出文件的上传路径
+                        item.write(storeFile);// 保存文件到硬盘
+                        request.setAttribute("message","文件上传成功!");
+                    }else{
+                        /*如果是普通的表单域*/
+                        String fieldName = item.getFieldName();
+                        String itemString =  new String(item.getString().getBytes("ISO-8859-1"), "utf-8");
+                        request.setAttribute(fieldName,itemString);
+                        System.out.println(fieldName+":"+itemString);
                     }
                 }
             }
         } catch (Exception ex) {
-            request.setAttribute("message",
-                    "错误信息: " + ex.getMessage());
+            request.setAttribute("message","错误信息: " + ex.getMessage());
         }
         // 跳转到 message.jsp
-        getServletContext().getRequestDispatcher("/message.jsp").forward(
-                request, response);
+        getServletContext().getRequestDispatcher("/message.jsp").forward(request, response);
     }
 }

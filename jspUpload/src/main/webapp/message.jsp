@@ -6,8 +6,8 @@
     <title>文件上传结果</title>
 </head>
 <body>
-<center>
-    <h2>${message}</h2>
-</center>
+    <h2 align="center">用户名：${username}</h2>
+    <h2 align="center">${message}</h2>
+
 </body>
 </html>
