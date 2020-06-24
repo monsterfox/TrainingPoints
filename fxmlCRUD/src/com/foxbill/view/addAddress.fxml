@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.foxbill.controller.AddAddressController">
+   <children>
+      <Label layoutX="260.0" layoutY="14.0" text="添加条目" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER_LEFT" gridLinesVisible="true" layoutX="122.0" layoutY="57.0" prefHeight="218.0" prefWidth="356.0" AnchorPane.topAnchor="100.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="93.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="263.0" minWidth="10.0" prefWidth="263.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="FirstName：" />
+            <Label layoutX="10.0" layoutY="41.0" text="LastName：" GridPane.rowIndex="1" />
+            <Label layoutX="10.0" layoutY="119.0" text="Email：" GridPane.rowIndex="2" />
+            <TextField fx:id="firstTF" layoutX="103.0" layoutY="37.0" GridPane.columnIndex="1" />
+            <TextField fx:id="lastTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="emailTF" layoutX="103.0" layoutY="115.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#handleSaveAction" text="保存条目" />
+                  <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#handleCancelAction" text="取消保存" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+   </children>
+</AnchorPane>
