@@ -25,7 +25,7 @@ public class AddressListController implements Initializable {
     @FXML
     private Button addBtn,delBtn;
     @FXML
-    private TableColumn<Person,String> firstName,lastName,email;
+    private TableColumn<Person,String> firstNameCol,lastNameCol,emailCol;
     @FXML
     private TableView tview;
 
@@ -56,12 +56,19 @@ public class AddressListController implements Initializable {
     /**
      * 显示表格数据
      * @param personList
+     *
+     * 知识点：
+     * setCellValueFactory方法为每列指定了一个单元格工厂（cell factory），这些cell factory是通过PropertyValueFactory类来实现的，它将Person类中对应的属性映射到对应的表格列中。
+     * 当数据模型被定义完毕，并且数据被关联到列之后，你可以通过TableView类的setItems方法来向表格中添加数据：如：table.setItems(data)。
+     *
+     * 由于ObservableList对象具有自动追踪其包含元素的改变的功能，所以TableView的内容将会在数据改变时自动更新。
      */
     public void showTable(ObservableList<Person> personList) {
-        firstName.setCellValueFactory(new PropertyValueFactory<>("firstName"));
-        lastName.setCellValueFactory(new PropertyValueFactory<>("lastName"));
-        email.setCellValueFactory(new PropertyValueFactory<>("email"));
-
+        //将数据关联到表格中的列
+        firstNameCol.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        lastNameCol.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        emailCol.setCellValueFactory(new PropertyValueFactory<>("email"));
+        //
         tview.setItems(personList);
     }
 
@@ -70,6 +77,7 @@ public class AddressListController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         System.out.println(">>>>>>>列表页面初始化 initialize>>>>>>>");
         showTable(Container.getPersonData());
+        tview.setEditable(true);
         /*tview.getSelectionModel().selectedItemProperty().addListener(// 选中某一行
                 new ChangeListener<ILayer>() {
                     @Override

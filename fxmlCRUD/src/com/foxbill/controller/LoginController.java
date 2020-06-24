@@ -8,6 +8,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -24,20 +26,34 @@ public class LoginController {
         String username = textField.getText();
         String password = passwordField.getText();
         if ("1".equals(username) && "1".equals(password)){
-            Parent parent = FXMLLoader.load(getClass().getResource("../view/addressList.fxml"));
-            //准备数据
+            // 通过事件获取Stage对象
+            Stage primaryStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            primaryStage.setTitle("主页列表");
+            primaryStage.centerOnScreen();
+            // Load root layout from fxml file. --
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(LoginController.class.getResource("../view/RootLayout.fxml"));
+            BorderPane rootLayout = (BorderPane) loader.load();
 
+            // Show the scene containing the root layout.
+            Scene scene = new Scene(rootLayout);
 
-            Scene scene = new Scene(parent);
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            //stage.hide();
-            stage.setTitle("主页列表");
-            stage.setScene(scene);
-            stage.centerOnScreen();
-            stage.show();
+            primaryStage.setScene(scene);
+            primaryStage.show();
+
+            // Load addressList .  --添加 addressList.fxml 到RootLayout.fxml中去
+            FXMLLoader loader1 = new FXMLLoader();
+            loader1.setLocation(LoginController.class.getResource("../view/addressList.fxml"));
+            AnchorPane addressList = (AnchorPane) loader1.load();
+
+            // Set addressList into the center of root layout.
+            rootLayout.setCenter(addressList);
+
         }else{
             actiontarget.setText("用户名或密码错误！");
         }
 
     }
+
+
 }
