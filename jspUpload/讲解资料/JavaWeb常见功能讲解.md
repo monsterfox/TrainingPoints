@@ -157,11 +157,99 @@ public class UploadFileServlet extends HttpServlet {
 
 文件名为：uploadFilemessage.jsp
 
-## 关联功能（1）：图片上传并预览
+## 4. 关联功能
 
-## 关联功能（2）：文件重命名
+### 4.1 图片上传并预览
 
+#### 4.1.1 图片上传
 
+（1）使用“文件上传”的代码，既可以实现图片上传。
+
+（2）可以在**上传页面**中，进行代码优化，给文件域添加accept属性为“image/*”，实现选择文件时，过滤掉非图片的文件。（但，如果仍选择非图片文件，该文件也可以上传）
+
+```Html
+<input type="file" name="uploadFile" id="file" accept="image/*" />
+```
+
+#### 4.1.2 图片预览
+
+（1）在**上传页面**中，给文件域添加onchange事件处理函数
+
+```html
+<input type="file" name="uploadFile" id="file" accept="image/*" onchange="imgChange(this);"/> <!--文件上传选择按钮-->
+```
+
+（2）添加<script>脚本
+
+```javascript
+<script type="text/javascript">
+    // 实现图片预览功能
+    function imgChange(obj) {
+        //获取点击的文本框
+        var file =document.getElementById("file");
+        console.log(file);
+        console.log(file.files[0])
+        //var imgUrl = window.URL.createObjectURL(file.files[0]);
+        var imgUrl = getObjectURL(file.files[0]);
+        console.log(imgUrl);
+        var img =document.getElementById('imghead');
+        img.setAttribute('src',imgUrl); // 修改img标签src属性值
+    };
+
+    //建立一個可存取到該file的url（兼容各种浏览器）
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) { // basic
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+</script>
+```
+
+### 4.2 文件重命名
+
+使用UUID给文件生成随机的名字。
+
+```java
+String fileName = UUID.randomUUID().toString();
+```
+
+### 4.3 获取普通表单域
+
+```
+String name = item.getFieldName();
+String value = item.getString();
+//若出现中文编码问题，可以使用下面的代码
+//String value =  new String(item.getString().getBytes("ISO-8859-1"), "utf-8");
+```
+
+## 5. 相关参数设置
+
+```java
+// 上传配置
+private static final int MEMORY_THRESHOLD   = 1024 * 1024 * 3;  // 3MB
+private static final int MAX_FILE_SIZE      = 1024 * 1024 * 40; // 40MB
+private static final int MAX_REQUEST_SIZE   = 1024 * 1024 * 50; // 50MB
+
+// Create a factory for disk-based file items
+DiskFileItemFactory factory = new DiskFileItemFactory();
+// Set factory constraints
+factory.setSizeThreshold(MEMORY_THRESHOLD);// 设置内存临界值 - 超过后将产生临时文件并存储于临时目录中
+factory.setRepository(new File(System.getProperty("java.io.tmpdir")));// 设置临时存储目录
+
+// Create a new file upload handler
+ServletFileUpload upload = new ServletFileUpload(factory);
+
+upload.setFileSizeMax(MAX_FILE_SIZE);// 设置最大文件上传值
+upload.setSizeMax(MAX_REQUEST_SIZE);// 设置最大请求值 (包含文件和表单数据)
+upload.setHeaderEncoding("UTF-8");// 中文处理
+
+```
 
 # 功能（2）：分页功能
 

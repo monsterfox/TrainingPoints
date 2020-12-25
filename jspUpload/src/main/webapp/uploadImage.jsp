@@ -54,11 +54,25 @@
         var file =document.getElementById("file");
         console.log(file);
         console.log(file.files[0])
-        var imgUrl = window.URL.createObjectURL(file.files[0]);
+        //var imgUrl = window.URL.createObjectURL(file.files[0]);
+        var imgUrl = getObjectURL(file.files[0]);
         console.log(imgUrl);
         var img =document.getElementById('imghead');
         img.setAttribute('src',imgUrl); // 修改img标签src属性值
     };
+
+    //建立一個可存取到該file的url（兼容各种浏览器）
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) { // basic
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
 </script>
 </body>
 </html>

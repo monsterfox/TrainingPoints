@@ -6,6 +6,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import java.io.*;
 import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -68,6 +69,7 @@ public class UploadImageServlet extends HttpServlet {
                     if (!item.isFormField()) {
                         /* 如果是文件上传表单域 */
                         String fileName = new File(item.getName()).getName();
+//                        String fileName = UUID.randomUUID().toString();
                         String filePath = uploadPath + File.separator + fileName;
                         File storeFile = new File(filePath);
                         System.out.println("上传路径："+filePath);// 在控制台输出文件的上传路径
