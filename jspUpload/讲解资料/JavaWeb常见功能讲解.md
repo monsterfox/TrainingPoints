@@ -4,12 +4,12 @@
 
 ## 1.实现方式：
 
-1. 使用第三方开源组件实现（Apache的commons-fileupload组件）
+1. 基于第三方开源组件实现（Apache的commons-fileupload、commons-io组件）
 2. 基于Servlet3.0实现
 
 ## 2.演示效果
 
-![GIF 2020-12-25 16-47-52](GIF 2020-12-25 16-47-52.gif)
+![uploadFile](uploadFile.gif)
 
 ## 3.实现步骤
 
@@ -160,6 +160,10 @@ public class UploadFileServlet extends HttpServlet {
 ## 4. 关联功能
 
 ### 4.1 图片上传并预览
+
+#### 4.1.0 案例演示
+
+![uploadImage](uploadImage.gif)
 
 #### 4.1.1 图片上传
 
