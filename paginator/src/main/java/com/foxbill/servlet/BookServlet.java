@@ -24,7 +24,6 @@ public class BookServlet extends HttpServlet {
         this.doPost(request, response);
     }
 
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         /*
@@ -47,27 +46,5 @@ public class BookServlet extends HttpServlet {
          */
         request.getRequestDispatcher("result-jstl.jsp").forward(request, response);
     }
-
-
-//    @Override
-//    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        /*
-//            1.设置编码
-//         */
-//        request.setCharacterEncoding("UTF-8");
-//        response.setCharacterEncoding("UTF-8");
-//
-//        /*
-//            2.查询数据 -- 返回集合
-//         */
-//        BookDao client=new BookDao();//新建BookDao的对象
-//        List<Book> list = client.findAllData();//调用Dao层的方法查询
-//        request.setAttribute("list", list);//把集合放入request作用域，传递到前端页面进行展示
-//
-//        /*
-//            3.转发到result-all.jsp页面进行数据展示
-//         */
-//        request.getRequestDispatcher("result-all.jsp").forward(request, response);
-//    }
 
 }

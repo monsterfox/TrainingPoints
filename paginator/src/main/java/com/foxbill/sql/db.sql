@@ -1,13 +1,4 @@
-/*
-Navicat MySQL Data Transfer
-Date: 2019-12-24 15:21:58
-*/
-
 SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for books
--- ----------------------------
 use test;
 
 DROP TABLE IF EXISTS `books`;

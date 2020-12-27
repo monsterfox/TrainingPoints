@@ -9,6 +9,8 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.32" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.10" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">

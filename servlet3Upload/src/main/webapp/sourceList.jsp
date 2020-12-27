@@ -100,6 +100,7 @@
                     </td>
                     <td>
                         <a class="tablelink" href="${pageContext.request.contextPath}/sourceServlet?op=downloadSource&id=${item.id}">【 下载】</a>
+                        <a class="tablelink" href="${pageContext.request.contextPath}/upload/${item.sourceName }" download="${pageContext.request.contextPath}/upload/${item.sourceName }">【下载-a download】</a>
                         <a class="tablelink"
                            href="${pageContext.request.contextPath}/navigationServlet?op=updateNavigationView&id=${item.id}">【修改】</a>
                         <a class="tablelink" href="javascript:delete_confirm(this,'${item.id}')">【 删除】</a>
