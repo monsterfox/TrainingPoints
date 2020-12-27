@@ -8,6 +8,8 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for books
 -- ----------------------------
+use test;
+
 DROP TABLE IF EXISTS `books`;
 CREATE TABLE `books` (
   `id` varchar(200) NOT NULL,

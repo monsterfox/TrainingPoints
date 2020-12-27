@@ -76,7 +76,7 @@
                 <a>第</a>
                 <select name="pageNo" onchange="document.all.form1.submit();">
                     <c:forEach var="i" begin="1" end="${pageModel.totalPages}">
-                        <option value="${i}" <c:if test="${pageNo == i}">selected="selected"</c:if>>${i}</option>
+                        <option value="${i}" <c:if test="${pageModel.pageNo == i}">selected="selected"</c:if>>${i}</option>
                     </c:forEach>
                 </select><a>页</a>/共${pageModel.totalPages}页</TD>
         </TR>

@@ -4,6 +4,10 @@ package com.foxbill.dao;
 import com.foxbill.domain.Book;
 import com.foxbill.domain.PageModel;
 import com.foxbill.util.DBUtil;
+import com.foxbill.util.DruidUtils;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,6 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookDao {
+    private QueryRunner qr = new QueryRunner(DruidUtils.getDataSource());
+
     public PageModel<Book> findData(String pageNo, String pageSize) {
         //声明分页模型
         PageModel<Book> pageModel = null;
@@ -24,36 +30,19 @@ public class BookDao {
             pageNo = "1";
         }
 
+        int size = Integer.parseInt(pageSize);
+        int no = Integer.parseInt(pageNo);
+
         //连接数据库，查询分页相关数据
-        Connection conn = DBUtil.getConnection();
-        String sql = "select * from books limit ?,?";//第一个参数，代表从哪条记录开始；第二个参数，代表一共查询多少条记录。
-        PreparedStatement pst = null;
-        ResultSet rs = null;
-        Book rec = null;
-        List<Book> list = new ArrayList<Book>();
-
         try {
-            //查询图书信息（集合）
-            pst = conn.prepareStatement(sql);
-            pst.setInt(1, (Integer.parseInt(pageNo) - 1) * Integer.parseInt(pageSize));
-            pst.setInt(2, Integer.parseInt(pageSize));//设置页容量(每页显示的记录数)
-            rs = pst.executeQuery();
-            while (rs.next()) {
-                rec = new Book();
-                rec.setId(rs.getInt("id"));
-                rec.setName(rs.getString("name"));
-                rec.setPrice(rs.getFloat("price"));
-                rec.setPnum(rs.getInt("pnum"));
-                rec.setCategory(rs.getString("category"));
-                list.add(rec);
-            }
+            String sql = "select * from books limit ?,?";//第一个参数，代表从哪条记录开始；第二个参数，代表一共查询多少条记录。
+            List<Book> list = null;
 
+            list = qr.query(sql,new BeanListHandler<Book>(Book.class),(no - 1) * size,size);
             //查询总记录数
-            ResultSet rs2 = pst.executeQuery("select count(*) from books");
-            int total = 0;
-            if (rs2.next()) {
-                total = rs2.getInt(1);//总的数据条数
-            }
+            sql = "select count(*) from books";
+            Long query = qr.query(sql, new ScalarHandler<>());
+            int total = query.intValue();
 
             //初始化分页模型，并设置参数
             pageModel = new PageModel<Book>();
@@ -64,9 +53,6 @@ public class BookDao {
             pageModel.setList(list);//设置图书信息（集合）
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            //释放资源
-            DBUtil.close(rs, pst, conn);
         }
         return pageModel;
     }
@@ -93,33 +79,13 @@ public class BookDao {
         查询所有图书
      */
     public List<Book> findAllData() {
-        List<Book> list = new ArrayList<Book>();
-
         //连接数据库，查询分页相关数据
-        Connection conn = DBUtil.getConnection();
         String sql = "select * from books";
-        PreparedStatement pst = null;
-        ResultSet rs = null;
-        Book rec = null;
-
+        List<Book> list = null;
         try {
-            //查询图书信息（集合）
-            pst = conn.prepareStatement(sql);
-            rs = pst.executeQuery();
-            while (rs.next()) {
-                rec = new Book();
-                rec.setId(rs.getInt("id"));
-                rec.setName(rs.getString("name"));
-                rec.setPrice(rs.getFloat("price"));
-                rec.setPnum(rs.getInt("pnum"));
-                rec.setCategory(rs.getString("category"));
-                list.add(rec);
-            }
+            list = qr.query(sql, new BeanListHandler<Book>(Book.class));
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            //释放资源
-            DBUtil.close(rs, pst, conn);
         }
         return list;
     }

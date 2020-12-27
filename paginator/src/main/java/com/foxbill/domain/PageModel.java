@@ -10,13 +10,13 @@ import java.util.List;
 public class PageModel<E> {  
     //结果集   --- 需要自己查询
     private List<E> list;
-    //查询总记录数  ---  需要自己查询
-    private int totalRecords;
 
-    //当前页
-    private int pageNo;
     //每页显示记录数
     private int pageSize;
+    //查询总记录数  ---  需要自己查询
+    private int totalRecords;
+    //当前页
+    private int pageNo;
 
     //总页数            （根据总记录数和每页记录数计算）
     private int totalPages;
