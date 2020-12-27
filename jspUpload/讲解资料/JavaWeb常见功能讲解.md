@@ -220,7 +220,9 @@ public class UploadFileServlet extends HttpServlet {
 使用UUID给文件生成随机的名字。
 
 ```java
-String fileName = UUID.randomUUID().toString();
+String fileName = new File(item.getName()).getName();//获取文件名
+String suffix = fileName.substring(fileName.lastIndexOf("."));//获取后缀名
+fileName = UUID.randomUUID() + suffix;//生成新文件名
 ```
 
 ### 4.3 获取普通表单域

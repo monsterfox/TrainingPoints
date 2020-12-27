@@ -68,8 +68,9 @@ public class UploadImageServlet extends HttpServlet {
                 for (FileItem item : formItems) {
                     if (!item.isFormField()) {
                         /* 如果是文件上传表单域 */
-                        String fileName = new File(item.getName()).getName();
-//                        String fileName = UUID.randomUUID().toString();
+                        String fileName = new File(item.getName()).getName();//获取文件名
+                        String suffix = fileName.substring(fileName.lastIndexOf("."));//获取后缀名
+                        fileName = UUID.randomUUID() + suffix;//生成新文件名
                         String filePath = uploadPath + File.separator + fileName;
                         File storeFile = new File(filePath);
                         System.out.println("上传路径："+filePath);// 在控制台输出文件的上传路径
