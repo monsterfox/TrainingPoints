@@ -1,58 +1,75 @@
-<%@ page contentType="text/html;charset=gb2312"%>
-<%@ page
+<%@page contentType="image/jpeg" pageEncoding="UTF-8"
         import="java.awt.*,java.awt.image.*,java.util.*,javax.imageio.*"%>
-<%@ page import="java.io.OutputStream"%>
-<%
-    try {
-        response.setHeader("Pragma", "No-cache");
-        response.setHeader("Cache-Control", "no-cache");
-        response.setDateHeader("Expires", 0);
-        int width = 110, height = 20;
-        BufferedImage image = new BufferedImage(width, height,
-                BufferedImage.TYPE_INT_RGB);
-        OutputStream os = response.getOutputStream();
-        Graphics g = image.getGraphics();
-        Random random = new Random();
-//ÉèÖÃ±³¾°ÑÕÉ«
-        g.setColor(new Color(251, 244, 166));
-//Ìî³äÖ¸¶¨µÄ¾ØÐÎ
-        g.fillRect(0, 0, width, height);
-//ÉèÖÃÎÄ×ÖµÄÑùÊ½
-        g.setFont(new Font("Times New Roman", Font.BOLD, 18));
-//ÉèÖÃÎÄ×ÖµÄÑÕÉ«
-        g.setColor(new Color(198, 39, 60));
-//ÉèÖÃÔËËã·ûºÅ
-        String[] s = { "+", "-" };
-        String sRand = "";
-//ÉèÖÃÔËËãÒò×Ó
-        int num1 = random.nextInt(100);
-        int num2 = random.nextInt(100);
-        int index = random.nextInt(2);
-        String rand = s[index];
-//ÉèÖÃÔËËã½á¹û
-        int end = 0;
-//µÃµ½ÔËËã±í´ïÊ½
-        sRand = num1 + rand + num2;
-//»æÖÆÔËËã±í´ïÊ½
-        g.drawString(sRand, 33, 16);
-        if (rand.equals("+")) {
-            end = num1 + num2;
-        } else {
-            end = num1 - num2;
-        }
-        session.setAttribute("rand", end);
-        g.dispose();
-
-        ImageIO.write(image, "JPEG", os);
-        os.flush();
-        os.close();
-        os = null;
-        response.flushBuffer();
-        out.clear();
-        out = pageContext.pushBody();
-    } catch (IllegalStateException e) {
-        System.out.println(e.getMessage());
-        e.printStackTrace();
+<%!
+    //ç”Ÿæˆéšæœºé¢œè‰²
+    Color getRandColor(Random random, int fc, int bc) {
+        if (fc > 255)
+            fc = 255;
+        if (bc > 255)
+            bc = 255;
+        int r = fc + random.nextInt(bc - fc);
+        int g = fc + random.nextInt(bc - fc);
+        int b = fc + random.nextInt(bc - fc);
+        return new Color(r, g, b);
     }
+%>
+<%
+    //è®¾ç½®é¡µé¢ä¸ç¼“å­˜
+    response.setHeader("Pragma", "No-cache");
+    response.setHeader("Cache-Control", "no-cache");
+    response.setDateHeader("Expires", 0);
+// è®¾ç½®å›¾ç‰‡çš„é•¿å®½
+    int width=106, height=30;
+//è®¾ç½®å¤‡é€‰æ±‰å­—ï¼Œå‰”é™¤ä¸€äº›ä¸é›…çš„æ±‰å­—
+    String base =
+            "\u6211\u662f\u5f90\u5f20\u660e\u71d5\u534e\u541b\u5c24\u6731\u7ea2\u7231\u4f20\u534e\u6768\u5510\u536b\u5b8f\u950b\u5f20\u4e2d\u56fd\u5317\u4eac\u4e0a\u6d77\u5929\u6d25\u6e56\u5317";
+
+//å¤‡é€‰æ±‰å­—çš„é•¿åº¦
+    int length = base.length();
+//åˆ›å»ºå†…å­˜å›¾åƒ
+    BufferedImage image =
+            new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+// èŽ·å–å›¾å½¢ä¸Šä¸‹æ–‡
+    Graphics g = image.getGraphics();
+//åˆ›å»ºéšæœºç±»çš„å®žä¾‹
+    Random random = new Random();
+// è®¾å®šå›¾åƒèƒŒæ™¯è‰²(å› ä¸ºæ˜¯åšèƒŒæ™¯ï¼Œæ‰€ä»¥åæ·¡)
+    g.setColor(getRandColor(random, 200, 250));
+    g.fillRect(0, 0, width, height);
+//å¤‡é€‰å­—ä½“
+    String[] fontTypes = { "u5b8bu4f53", "u65b0u5b8bu4f53",
+            "u9ed1u4f53", "u6977u4f53", "u96b6u4e66" };
+    int fontTypesLength = fontTypes.length;
+//åœ¨å›¾ç‰‡èƒŒæ™¯ä¸Šå¢žåŠ å™ªç‚¹
+    g.setColor(getRandColor(random, 160, 200));
+    g.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+    for (int i=0; i<6; i++) {
+        g.drawString("*********************************************",
+                0, 5 * (i + 2));
+    }
+//å–éšæœºäº§ç”Ÿçš„è®¤è¯ç (6ä¸ªæ±‰å­—)
+//ä¿å­˜ç”Ÿæˆçš„æ±‰å­—å­—ç¬¦ä¸²
+    String sRand = "";
+    for (int i=0; i<3; i++) {
+        int start = random.nextInt(length);
+        String rand = base.substring(start, start + 1);
+        sRand += rand;
+//è®¾ç½®å­—ä½“çš„é¢œè‰²
+        g.setColor(getRandColor(random, 10, 150));
+//è®¾ç½®å­—ä½“
+        g.setFont(new Font(fontTypes[random.nextInt(fontTypesLength)],
+                Font.BOLD, 18 + random.nextInt(6)));
+//å°†æ­¤æ±‰å­—ç”»åˆ°å›¾ç‰‡ä¸Š
+        g.drawString(rand, 24*i + 15 + random.nextInt(8), 24);
+    }
+//å°†è®¤è¯ç å­˜å…¥session
+    session.setAttribute("rand", sRand);
+    g.dispose();
+
+//è¾“å‡ºå›¾åƒåˆ°é¡µé¢
+    ImageIO.write(image, "JPEG", response.getOutputStream());
+    response.flushBuffer();
+    out.clear();
+    out = pageContext.pushBody();
 %>
 

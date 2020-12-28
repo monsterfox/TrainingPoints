@@ -44,8 +44,8 @@
                 <input type="text" name="rand" size="15">
             </td>
             <td width="138" valign="middle" align="center">
-                <img alt="code..." name="randImage" id="randImage0"
-                     src="image0.jsp" width="60" height="20"
+                <img alt="code..." name="randImage" id="randImage1"
+                     src="image1.jsp" width="60" height="20"
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
@@ -60,8 +60,8 @@
                 <input type="text" name="rand" size="15">
             </td>
             <td width="138" valign="middle" align="center">
-                <img alt="code..." name="randImage" id="randImage1"
-                     src="image1.jsp" width="60" height="20"
+                <img alt="code..." name="randImage" id="randImage2"
+                     src="image2.jsp" width="60" height="20"
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
@@ -76,8 +76,8 @@
                 <input type="text" name="rand" size="15">
             </td>
             <td width="138" valign="middle" align="center">
-                <img alt="code..." name="randImage" id="randImage2"
-                     src="image2.jsp" width="60" height="20"
+                <img alt="code..." name="randImage" id="randImage3"
+                     src="image3.jsp" width="60" height="20"
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
@@ -92,8 +92,8 @@
                 <input type="text" name="rand" size="15">
             </td>
             <td width="138" valign="middle" align="center">
-                <img alt="code..." name="randImage" id="randImage3"
-                     src="image3.jsp" width="60" height="20"
+                <img alt="code..." name="randImage" id="randImage4"
+                     src="image4.jsp" width="60" height="20"
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
@@ -110,5 +110,9 @@
         </tr>
     </table>
 </form>
+<hr>
+<img alt="code..." name="randImage" id="randImage"
+     src="image0.jsp" width="60" height="20"
+     border="1" align="absmiddle">
 </body>
 </html>
