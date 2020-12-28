@@ -18,7 +18,7 @@
 <body>
     <form action="content" method="post">
         <input type="hidden" name="command" value="addRTE">
-        <textarea class="ckeditor" name="content"></textarea>
+        <textarea class="ckeditor" name="content1"></textarea>
         <input type="submit" value="提交">
     </form>
 </body>
