@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jspUpload" />
         <module name="paginator" />
+        <module name="richTextEditor" />
         <module name="servlet3Upload" />
         <module name="uploadFileAndImage" />
         <module name="verificationCode" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="jspUpload" target="1.8" />
       <module name="paginator" target="1.8" />
+      <module name="richTextEditor" target="1.8" />
       <module name="servlet3Upload" target="1.8" />
       <module name="TrainingPoints" target="1.8" />
       <module name="uploadFileAndImage" target="1.8" />

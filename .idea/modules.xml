@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/TrainingPoints.iml" filepath="$PROJECT_DIR$/TrainingPoints.iml" />
       <module fileurl="file://$PROJECT_DIR$/jspUpload/jspUpload.iml" filepath="$PROJECT_DIR$/jspUpload/jspUpload.iml" />
       <module fileurl="file://$PROJECT_DIR$/paginator/paginator.iml" filepath="$PROJECT_DIR$/paginator/paginator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/richTextEditor/richTextEditor.iml" filepath="$PROJECT_DIR$/richTextEditor/richTextEditor.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet3Upload/servlet3Upload.iml" filepath="$PROJECT_DIR$/servlet3Upload/servlet3Upload.iml" />
       <module fileurl="file://$PROJECT_DIR$/uploadFileAndImage/uploadFileAndImage.iml" filepath="$PROJECT_DIR$/uploadFileAndImage/uploadFileAndImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/verificationCode/verificationCode.iml" filepath="$PROJECT_DIR$/verificationCode/verificationCode.iml" />

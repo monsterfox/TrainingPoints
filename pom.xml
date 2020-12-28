@@ -14,6 +14,7 @@
         <module>uploadFileAndImage</module>
         <module>paginator</module>
         <module>verificationCode</module>
+        <module>richTextEditor</module>
     </modules>
 
     <properties>
