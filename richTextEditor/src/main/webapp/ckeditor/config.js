@@ -8,5 +8,5 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
     config.image_previewText=' ';//预览区域显示内容
-    config.filebrowserImageUploadUrl= "ImgUpload.action"; //要上传的action或servlet
+    //config.filebrowserImageUploadUrl='';
 };

@@ -40,9 +40,9 @@ public class UploadServlet extends HttpServlet {
         // 4. 获取上传文件的文件名
         //Tomcat8 可用
         //String fileName = sourceName.getSubmittedFileName();
+
         //Tomcat7 可用
         String cd = fileSource.getHeader("Content-Disposition");
-
         //截取不同类型的文件需要自行判断
         String fileName = cd.substring(cd.lastIndexOf("=")+2, cd.length()-1);
 

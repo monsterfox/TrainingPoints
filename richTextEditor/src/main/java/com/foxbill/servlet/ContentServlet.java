@@ -35,6 +35,7 @@ public class ContentServlet extends HttpServlet {
 
     private void addRTE(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String content = request.getParameter("content");
+        System.out.println(content);
         Content contentVO = new Content(content);
         contentDao.addContent(contentVO);
 

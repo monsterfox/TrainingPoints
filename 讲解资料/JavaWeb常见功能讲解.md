@@ -1294,3 +1294,244 @@ public class BookServlet extends HttpServlet {
 
 
 
+
+
+# 功能（5）：富文本编辑器的使用
+
+## 1.演示效果
+
+![richTextEditor](richTextEditor.gif)
+
+## 2.实现步骤
+
+### 2.1 在页面引入ckeditor
+
+1.官网下载CKEditor,可选Basic, Standard, Full
+
+解压放置其webapp下
+
+
+
+2.JSP中引入以下文件：
+
+```html
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="ckeditor/config.js"></script>
+```
+
+3.有以下几种方法可实现CKEditor
+
+**一：通过设置class样式**
+
+```html
+<textarea class="ckeditor" name="editor1"></textarea>
+```
+
+
+
+**二：使用JS代码**
+
+```javascript
+$(document).ready(function(){
+	CKEDITOR.replace('content');  //content为textarea元素ID
+});
+```
+
+**三：使用jquery**
+
+使用jquery之前一定要先引入jquery文件，另外还要引入ckeditor/adapters下的一个jquery.js
+
+(两者不一样，务必要引入)
+
+```javascript
+$(document).ready(function(){
+	$('textarea#editor1').ckeditor();
+});
+```
+
+
+
+另外配置config.js以满足自己的项目需求。
+
+```javascript
+CKEDITOR.editorConfig = function( config ) {
+	// Define changes to default configuration here.
+	// For the complete reference:
+	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
+ 
+	// The toolbar groups arrangement, optimized for a single toolbar row.
+	config.toolbarGroups = [
+		{ name: 'document',	   groups: [ 'mode', 'document', 'doctools' ] },
+		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
+		{ name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },
+		{ name: 'forms' },
+		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+		{ name: 'links' },
+		{ name: 'insert' },
+		{ name: 'styles' },
+		{ name: 'colors' },
+		{ name: 'tools' },
+		{ name: 'others' },
+		{ name: 'about' }
+	];
+ 
+	// The default plugins included in the basic setup define some buttons that
+	// we don't want too have in a basic editor. We remove them here.
+	config.removeButtons = 'Cut,Copy,Paste,Undo,Redo,Anchor,Underline,Strike,Subscript,Superscript';
+ 
+	// Let's have it basic on dialogs as well.
+	config.removeDialogTabs = 'link:advanced';
+};
+```
+
+### 2.2 实现图片上传
+
+CKEditor编辑器的工具栏中初始的时候应该是这样子的，没有图片上传按钮
+
+![init](init.png)
+
+并且预览中有一堆火星文，可以修改相应配置删除它。
+
+**第一种方法**： 打开ckeditor/plugins/image/dialogs/image.js文件，搜索“b.config.image_previewText”，(b.config.image_previewText||'')单引号中的内容全删了，注意别删多了。(由于ckeditor的很多js文件都是压缩过的，格式很难看，很容易删错，所以不推荐此种方法)
+
+**第二种方法：**打开config.js文件，加入下面一句话
+
+config.image_previewText=' '; //预览区域显示内容
+
+
+
+下面实现图片上传：
+
+打开config.js文件，加入下面一句话
+
+config.filebrowserImageUploadUrl= "ImgUpload.action"; //待会要上传的action或servlet
+
+![upload](E:\billfox\Prj\TrainingPoints\讲解资料\upload.jpg)
+
+![upload2](E:\billfox\Prj\TrainingPoints\讲解资料\upload2.jpg)
+
+上面的只是一个上传页面。也就相当于一个HTML的form表单，
+
+要配置点击"上传到服务器上"按钮后请求的Action。已在ckeditor/config.js中配置。
+
+就是上面的 config.filebrowserImageUploadUrl = "ImgUpload.action";
+
+可使用chrome审查元素查看代码
+
+
+
+接下来就是Servlet中的上传方法：
+
+```java
+package com.foxbill.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.UUID;
+
+/**
+ * 基于Servlet3.0 实现文件（图片）上传
+ */
+@WebServlet(name = "ImgUploadServlet",urlPatterns = "/ImgUpload.action")
+@MultipartConfig(maxFileSize = 1024*50*1024)
+public class ImgUploadServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("utf-8");
+        PrintWriter out = response.getWriter();
+        // CKEditor提交的很重要的一个参数
+        String callback = request.getParameter("CKEditorFuncNum");//可以通过浏览器的开发者工具，查看
+        String expandedName = ""; // 文件扩展名
+
+        // 1. 定义路径
+        String realPath = this.getServletContext().getRealPath("/img/uploadImg/");
+
+        // 2. 如果该文件夹不存在、则创建出来
+        File file = new File(realPath);
+        if (!file.exists()){
+            file.mkdirs();
+        }
+
+        Part fileSource = null;
+        try {
+            // 3. 获取上传文件
+            fileSource = request.getPart("upload");
+        } catch (Exception e) {
+            throw new RuntimeException("\"文件上传失败，请上传小于5kb的文件\""+e);
+        }
+
+        //4. 验证文件类型
+        String uploadContentType = fileSource.getContentType();//获取文件类型
+        //如果文件类型，不为图片，则提示错误
+        if (uploadContentType.equals("image/pjpeg") || uploadContentType.equals("image/jpeg")) {
+            // IE6上传jpg图片的headimageContentType是image/pjpeg，而IE9以及火狐上传的jpg图片是image/jpeg
+            expandedName = ".jpg";
+        } else if (uploadContentType.equals("image/png") || uploadContentType.equals("image/x-png")) {
+            // IE6上传的png图片的headimageContentType是"image/x-png"
+            expandedName = ".png";
+        } else if (uploadContentType.equals("image/gif")) {
+            expandedName = ".gif";
+        } else if (uploadContentType.equals("image/bmp")) {
+            expandedName = ".bmp";
+        } else {
+            out.println("<script type=\"text/javascript\">");
+            out.println("window.parent.CKEDITOR.tools.callFunction(" + callback + ",''," + "'文件格式不正确（必须为.jpg/.gif/.bmp/.png文件）');");
+            out.println("</script>");
+        }
+
+        //5. 验证文件大小
+        long size = fileSource.getSize();//获取文件的大小
+        System.out.println(size/1024);
+        if (size > 600 * 1024) {
+            out.println("<script type=\"text/javascript\">");
+            out.println("window.parent.CKEDITOR.tools.callFunction(" + callback + ",''," + "'文件大小不得大于600k');");
+            out.println("</script>");
+            return;
+        }
+
+        // 6. 获取上传文件的文件名
+        //Tomcat8 可用
+        //String fileName = fileSource.getSubmittedFileName();
+
+        //Tomcat7 可用
+        String cd = fileSource.getHeader("Content-Disposition");
+        //截取不同类型的文件需要自行判断
+        String fileName = cd.substring(cd.lastIndexOf("=")+2, cd.length()-1);
+        System.out.println(fileName);
+
+        //6.2 更改上传文件名称:
+        // 如果文件名称不为空
+        if (!fileName.equals("") || fileName != null){
+            fileName = UUID.randomUUID() + "_" + fileName;
+        }
+        //7. 写文件
+        fileSource.write(realPath+"/"+fileName);
+
+        // 返回"图像"选项卡并显示图片  request.getContextPath()为web项目名
+        out.println("<script type=\"text/javascript\">");
+        out.println("window.parent.CKEDITOR.tools.callFunction(" + callback + ",'" + request.getContextPath() + "/img/uploadImg/" + fileName + "','')");
+        out.println("</script>");
+
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request,response);
+    }
+}
+```
+
+最后上传图片成功
+
+
+
+![uploadokj](E:\billfox\Prj\TrainingPoints\讲解资料\uploadokj.png)
