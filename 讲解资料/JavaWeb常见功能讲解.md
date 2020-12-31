@@ -1385,7 +1385,7 @@ CKEDITOR.editorConfig = function( config ) {
 };
 ```
 
-### 2.2 实现图片上传
+### 2.2 实现图片上传(基于Servlet3.0)
 
 CKEditor编辑器的工具栏中初始的时候应该是这样子的，没有图片上传按钮
 
