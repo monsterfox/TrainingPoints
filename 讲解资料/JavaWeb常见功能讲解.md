@@ -1,5 +1,3 @@
-12
-
 # 功能（1）：文件上传
 
 ## 1.实现方式：
@@ -21,40 +19,40 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>上传文件</title>
-    <style type="text/css">
-        table{
-            width: 50%;
-            margin: 0px auto;
-            border: solid 1px black;
-            border-collapse: collapse;
-        }
-        tr{
-            height: 50px;
-        }
-        td{
-            border: solid 1px black;
-            padding: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>上传文件</title>
+  <style type="text/css">
+    table{
+      width: 50%;
+      margin: 0px auto;
+      border: solid 1px black;
+      border-collapse: collapse;
+    }
+    tr{
+      height: 50px;
+    }
+    td{
+      border: solid 1px black;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
 <h1 align="center">上传文件</h1>
-<form action="uploadFile" enctype="multipart/form-data" method="POST" >
-    <table>
-        <tr>
-            <td>上传文件：</td>
-            <td>
-                <input type="file" name="uploadFile" id="file" /> 
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">
-                <input type="submit" value="上传"/>
-            </td>
-        </tr>
-    </table>
+<form action="uploadFile1" enctype="multipart/form-data" method="POST" >
+  <table>
+    <tr>
+      <td>上传文件：</td>
+      <td>
+        <input type="file" name="uploadFile" id="file" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="上传"/>
+      </td>
+    </tr>
+  </table>
 </form>
 </body>
 </html>
@@ -83,7 +81,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
-@WebServlet("/uploadFile")
+@WebServlet("/uploadFile1")
 public class UploadFileServlet extends HttpServlet {
     // 上传文件存储目录
     private static final String UPLOAD_DIRECTORY = "upload";
@@ -99,6 +97,7 @@ public class UploadFileServlet extends HttpServlet {
         DiskFileItemFactory factory = new DiskFileItemFactory();// Create a factory for disk-based file items
         ServletFileUpload upload = new ServletFileUpload(factory);// Create a new file upload handler
         String uploadPath = getServletContext().getRealPath("/") + UPLOAD_DIRECTORY;// 构造临时路径来存储上传的文件
+        System.out.println(uploadPath);
 
         // 如果目录不存在则创建
         File uploadDir = new File(uploadPath);
@@ -129,7 +128,7 @@ public class UploadFileServlet extends HttpServlet {
             request.setAttribute("message","错误信息: " + ex.getMessage());
         }
         // 跳转到 message.jsp
-        getServletContext().getRequestDispatcher("/uploadFilemessage.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/message.jsp").forward(request, response);
     }
 
     @Override
@@ -138,6 +137,8 @@ public class UploadFileServlet extends HttpServlet {
     }
 }
 ```
+
+**注意：**导入jar包（commons-fileupload-1.x.jar和commons-io-x.x.jar）
 
 #### 3.3 编写消息页面
 
@@ -150,52 +151,23 @@ public class UploadFileServlet extends HttpServlet {
 </head>
 <body>
 
-    <h2 align="center">${message}</h2>
+<h2 align="center">${message}</h2>
 
 </body>
 </html>
 ```
 
-文件名为：uploadFilemessage.jsp
+文件名为：message.jsp
 
 ### 方式二：
 
 #### 3.1 编写上传页面
 
 ```jsp
-<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-<head>
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/admin/resource/css/style.css"/>
-</head>
-<body>
-<div class="formbody">
-    <div class="formtitle"><span>资源信息</span></div>
-    <form action="${pageContext.request.contextPath}/upload" method="post" enctype="multipart/form-data">
-
-        <ul class="forminfo">
-            <li>
-                <label>上传人</label>
-                <input class="dfinput" type="text" name="author" id="entityauthor"
-                       class="dfinput" data-rule-required="true"/>
-            </li>
-            <li>
-                <label>资源文件</label>
-                <input class="dfinput" type="file" name="sourceName" id="entitysourceName"
-                       class="dfinput" data-rule-required="true"/>
-            </li>
-
-            <li><label>&nbsp;</label><input  type="submit" class="btn" value="确认上传"/></li>
-
-        </ul>
-
-    </form>
-</div>
-</body>
-</html>
+<form action="uploadFile2" enctype="multipart/form-data" method="POST" >
 ```
+
+其他同上
 
 #### 3.2 开发处理文件上传的Servlet
 
@@ -214,12 +186,17 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@WebServlet(name = "UploadServlet",urlPatterns = "/uploadFile")
+@WebServlet(name = "UploadServlet",urlPatterns = "/uploadFile2")
 @MultipartConfig(maxFileSize = 1024*50*1024)
 public class UploadServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
+        // 获取普通表单域
+        /*
+        String author = request.getParameter("author");
+        System.out.println(author);
+        */
         // 1. 定义路径
         String realPath = this.getServletContext().getRealPath("/upload/");
 
@@ -230,9 +207,6 @@ public class UploadServlet extends HttpServlet {
         }
         Part fileSource = null;
 
-//        String author = request.getParameter("author");
-//        System.out.println(author);
-
         try {
             // 3. 获取上传文件
             fileSource = request.getPart("uploadFile");
@@ -241,12 +215,12 @@ public class UploadServlet extends HttpServlet {
         }
         // 4. 获取上传文件的文件名
         //Tomcat8 可用
-        //String fileName = sourceName.getSubmittedFileName();
+        String fileName = fileSource.getSubmittedFileName();
         //Tomcat7 可用
-        String cd = fileSource.getHeader("Content-Disposition");
-
-        //截取不同类型的文件需要自行判断
-        String fileName = cd.substring(cd.lastIndexOf("=")+2, cd.length()-1);
+        /*
+        String fileName = fileSource.getHeader("Content-Disposition");
+        fileName = fileName.substring(fileName.lastIndexOf("=")+2, fileName.length()-1);//截取不同类型的文件需要自行判断
+         */
 
         //4.2 更改上传文件名称:
         String currentDate = new SimpleDateFormat("yyyyMMdd").format(new Date());
@@ -257,8 +231,8 @@ public class UploadServlet extends HttpServlet {
 
         fileSource.write(realPath+"/"+fileName);
 
-        request.setAttribute("msg","添加资源成功！");
-        request.getRequestDispatcher("/message.jsp").forward(request,response);
+        request.setAttribute("message","添加资源成功！");
+        request.getRequestDispatcher("message.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -270,18 +244,7 @@ public class UploadServlet extends HttpServlet {
 #### 3.3 编写消息页面
 
 ```jsp
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" isELIgnored="false" %>
-<html>
-<head>
-    <title>文件上传结果</title>
-</head>
-<body>
-
-    <h2 align="center">${message}</h2>
-
-</body>
-</html>
+同上
 ```
 
 ## 4. 关联功能
@@ -908,7 +871,7 @@ public class BookServlet extends HttpServlet {
 
 ## 1.演示效果
 
-![code](E:\workspace\TrainingPoints\jspUpload\讲解资料\code.gif)
+![code](code.gif)
 
 ## 2.实现方式
 
@@ -1326,6 +1289,8 @@ public class BookServlet extends HttpServlet {
 </body>
 </html>
 ```
+
+# 功能（4）：MD5加密
 
 
 
