@@ -1534,4 +1534,4 @@ public class ImgUploadServlet extends HttpServlet {
 
 
 
-![uploadokj](E:\billfox\Prj\TrainingPoints\讲解资料\uploadokj.png)
+![uploadok](E:\billfox\Prj\TrainingPoints\讲解资料\uploadok.png)
