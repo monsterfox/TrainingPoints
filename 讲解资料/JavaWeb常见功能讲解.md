@@ -1292,7 +1292,14 @@ public class BookServlet extends HttpServlet {
 
 # 功能（4）：MD5加密
 
+```java
+//spring 自带的 DigestUtils 工具类可以进行 md5 加密  
+//导入包  
+import org.springframework.util.DigestUtils;
 
+//对密码进行 md5 加密
+String md5Password = DigestUtils.md5DigestAsHex(user.getPassword().getBytes());
+```
 
 
 
