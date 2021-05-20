@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TrainingPoints.iml" filepath="$PROJECT_DIR$/TrainingPoints.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaFxDemo/javaFxDemo.iml" filepath="$PROJECT_DIR$/javaFxDemo/javaFxDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jspUpload/jspUpload.iml" filepath="$PROJECT_DIR$/jspUpload/jspUpload.iml" />
       <module fileurl="file://$PROJECT_DIR$/paginator/paginator.iml" filepath="$PROJECT_DIR$/paginator/paginator.iml" />
       <module fileurl="file://$PROJECT_DIR$/richTextEditor/richTextEditor.iml" filepath="$PROJECT_DIR$/richTextEditor/richTextEditor.iml" />

@@ -15,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="javaFxDemo" target="1.8" />
       <module name="jspUpload" target="1.8" />
       <module name="paginator" target="1.8" />
       <module name="richTextEditor" target="1.8" />
