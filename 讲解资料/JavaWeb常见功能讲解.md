@@ -1385,7 +1385,7 @@ CKEDITOR.editorConfig = function( config ) {
 };
 ```
 
-### 2.2 实现图片上传
+### 2.2 实现图片上传(基于Servlet3.0)
 
 CKEditor编辑器的工具栏中初始的时候应该是这样子的，没有图片上传按钮
 
@@ -1407,9 +1407,9 @@ config.image_previewText=' '; //预览区域显示内容
 
 config.filebrowserImageUploadUrl= "ImgUpload.action"; //待会要上传的action或servlet
 
-![upload](E:\billfox\Prj\TrainingPoints\讲解资料\upload.jpg)
+![upload](upload.jpg)
 
-![upload2](E:\billfox\Prj\TrainingPoints\讲解资料\upload2.jpg)
+![upload2](upload2.jpg)
 
 上面的只是一个上传页面。也就相当于一个HTML的form表单，
 
@@ -1532,6 +1532,4 @@ public class ImgUploadServlet extends HttpServlet {
 
 最后上传图片成功
 
-
-
-![uploadok](E:\billfox\Prj\TrainingPoints\讲解资料\uploadok.png)
+![uploadok](uploadok.png)
