@@ -32,7 +32,7 @@ public class AddressListController implements Initializable {
     @FXML
     protected void handleAddAction(ActionEvent event) throws IOException {
         System.out.println(">>>>>>>新增条目>>>>>>>");
-        Parent parent = FXMLLoader.load(getClass().getResource("../view/addAddress.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/com/foxbill/view/addAddress.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         //stage.hide();

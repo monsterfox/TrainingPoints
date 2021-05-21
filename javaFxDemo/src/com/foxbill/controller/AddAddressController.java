@@ -26,7 +26,7 @@ public class AddAddressController {
         Person person = new Person(firstName,lastName,email);
         Container.personList.add(person);
 
-        Parent parent = FXMLLoader.load(getClass().getResource("../view/addressList.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/com/foxbill/view/addressList.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         //stage.hide();
@@ -38,7 +38,7 @@ public class AddAddressController {
 
     @FXML
     protected void handleCancelAction(ActionEvent event) throws IOException {
-        Parent parent = FXMLLoader.load(getClass().getResource("../view/addressList.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/com/foxbill/view/addressList.fxml"));
         Scene scene = new Scene(parent);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         //stage.hide();

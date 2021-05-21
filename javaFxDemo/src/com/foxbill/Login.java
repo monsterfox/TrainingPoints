@@ -10,7 +10,7 @@ public class Login extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view/login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/foxbill/view/login.fxml"));
         primaryStage.setTitle("登录");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.centerOnScreen();//设置窗口居中（窗口会闪烁）

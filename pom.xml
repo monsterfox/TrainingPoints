@@ -15,7 +15,6 @@
         <module>paginator</module>
         <module>verificationCode</module>
         <module>richTextEditor</module>
-        <module>javaFxDemo</module>
     </modules>
 
     <properties>

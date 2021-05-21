@@ -32,7 +32,7 @@ public class LoginController {
             primaryStage.centerOnScreen();
             // Load root layout from fxml file. --
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(LoginController.class.getResource("../view/RootLayout.fxml"));
+            loader.setLocation(LoginController.class.getResource("/com/foxbill/view/RootLayout.fxml"));
             BorderPane rootLayout = (BorderPane) loader.load();
 
             // Show the scene containing the root layout.
@@ -43,7 +43,7 @@ public class LoginController {
 
             // Load addressList .  --添加 addressList.fxml 到RootLayout.fxml中去
             FXMLLoader loader1 = new FXMLLoader();
-            loader1.setLocation(LoginController.class.getResource("../view/addressList.fxml"));
+            loader1.setLocation(LoginController.class.getResource("/com/foxbill/view/addressList.fxml"));
             AnchorPane addressList = (AnchorPane) loader1.load();
 
             // Set addressList into the center of root layout.
