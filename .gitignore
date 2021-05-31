@@ -13,7 +13,6 @@
 ### IntelliJ IDEA ###
 *.iws
 *.ipr
-*.iml
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
