@@ -15,6 +15,9 @@ Date: 2020-12-31 15:25:16
 
 SET FOREIGN_KEY_CHECKS=0;
 
+-- 打开test数据库
+use test;
+
 -- ----------------------------
 -- Table structure for t_content
 -- ----------------------------

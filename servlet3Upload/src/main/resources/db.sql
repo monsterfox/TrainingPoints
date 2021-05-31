@@ -1,4 +1,8 @@
--- 资源
+-- 打开test数据库
+use test;
+-- ----------------------------
+-- 资源表
+-- ----------------------------
   drop  table if exists  source;
   create  table  source(
     id int  primary  key auto_increment,
