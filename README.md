@@ -9,10 +9,11 @@
 
 #### 专题分类  
 1.  分页功能：paginator
-
+    本模块运行需要连接数据库，需在test数据库中创建books表，建表语句在模块下的resources/db.sql中
 2.  文件上传：  
     （1）jspUpload:使用jsp实现文件上传  
-    （2）servlet3Upload:使用servlet3实现文件上传  
+    （2）servlet3Upload:使用servlet3实现文件上传
+        本模块运行需要连接数据库，需在test数据库中创建source表，建表语句在模块下的resources/db.sql中  
     （3）uploadFileAndImage:使用SmartUpload插件实现文件上传 【已废弃，不推荐使用】 
     
 3.  验证码：verificationCode   
