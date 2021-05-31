@@ -49,7 +49,7 @@
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
-                <a href="javascript:loadimage(0);">
+                <a href="javascript:loadimage(1);">
                     看不清点我
                 </a>
             </td>
@@ -65,7 +65,7 @@
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
-                <a href="javascript:loadimage(1);">
+                <a href="javascript:loadimage(2);">
                     看不清点我
                 </a>
             </td>
@@ -81,7 +81,7 @@
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
-                <a href="javascript:loadimage(2);">
+                <a href="javascript:loadimage(3);">
                     看不清点我
                 </a>
             </td>
@@ -97,7 +97,7 @@
                      border="1" align="absmiddle">
             </td>
             <td height="36" colspan="3" align="center" valign="middle">
-                <a href="javascript:loadimage(3);">
+                <a href="javascript:loadimage(4);">
                     看不清点我
                 </a>
             </td>
@@ -110,9 +110,5 @@
         </tr>
     </table>
 </form>
-<hr>
-<img alt="code..." name="randImage" id="randImage"
-     src="image0.jsp" width="60" height="20"
-     border="1" align="absmiddle">
 </body>
 </html>
