@@ -13,7 +13,7 @@
 2.  文件上传：  
     （1）jspUpload:使用jsp实现文件上传  
     （2）servlet3Upload:使用servlet3实现文件上传  
-    （3）uploadFileAndImage:使用SmartUpload插件实现文件上传  
+    （3）uploadFileAndImage:使用SmartUpload插件实现文件上传 【已废弃，不推荐使用】 
     
 3.  验证码：verificationCode   
     讲解了四种验证码的实现    
