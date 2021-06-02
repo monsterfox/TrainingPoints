@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="uploadFileAndImage:war">
-    <output-path>$PROJECT_DIR$/uploadFileAndImage/target</output-path>
-    <root id="archive" name="TrainingPoints.war">
-      <element id="artifact" artifact-name="uploadFileAndImage:war exploded" />
-    </root>
-  </artifact>
-</component>

@@ -2,7 +2,7 @@
   <artifact type="jar" name="javaFxDemo:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/javaFxDemo_jar</output-path>
     <root id="archive" name="javaFxDemo.jar">
-      <element id="module-output" name="javaFxDemo" />
+      <element id="module-output" name="java-fxdemo" />
     </root>
   </artifact>
 </component>

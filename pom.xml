@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>jspUpload</module>
-        <module>servlet3Upload</module>
-        <module>uploadFileAndImage</module>
+        <module>web-upload-apacheplugins</module>
+        <module>web-upload-servlet3</module>
         <module>web-paginator</module>
-        <module>verificationCode</module>
-        <module>richTextEditor</module>
+        <module>web-verificationcode</module>
+        <module>web-rte</module>
+        <module>java-fx</module>
     </modules>
 
     <properties>

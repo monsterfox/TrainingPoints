@@ -6,16 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="java-fx" />
         <module name="jspUpload" />
         <module name="paginator" />
         <module name="richTextEditor" />
         <module name="servlet3Upload" />
-        <module name="uploadFileAndImage" />
         <module name="verificationCode" />
         <module name="web-paginator" />
+        <module name="web-rte" />
+        <module name="web-upload-apacheplugins" />
+        <module name="web-upload-servlet3" />
+        <module name="web-verificationcode" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="java-fx" target="1.8" />
       <module name="javaFxDemo" target="1.8" />
       <module name="jspUpload" target="1.8" />
       <module name="paginator" target="1.8" />
@@ -25,6 +30,10 @@
       <module name="uploadFileAndImage" target="1.8" />
       <module name="verificationCode" target="1.8" />
       <module name="web-paginator" target="1.8" />
+      <module name="web-rte" target="1.8" />
+      <module name="web-upload-apacheplugins" target="1.8" />
+      <module name="web-upload-servlet3" target="1.8" />
+      <module name="web-verificationcode" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

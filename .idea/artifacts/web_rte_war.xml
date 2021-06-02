@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="web-rte:war">
+    <output-path>$PROJECT_DIR$/web-rte/target</output-path>
+    <root id="archive" name="richTextEditor.war">
+      <element id="artifact" artifact-name="web-rte:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/jspUpload" />
-    <file type="web" url="file://$PROJECT_DIR$/richTextEditor" />
-    <file type="web" url="file://$PROJECT_DIR$/servlet3Upload" />
     <file type="web" url="file://$PROJECT_DIR$/uploadFileAndImage" />
-    <file type="web" url="file://$PROJECT_DIR$/verificationCode" />
     <file type="web" url="file://$PROJECT_DIR$/web-paginator" />
+    <file type="web" url="file://$PROJECT_DIR$/web-rte" />
+    <file type="web" url="file://$PROJECT_DIR$/web-upload-apacheplugins" />
+    <file type="web" url="file://$PROJECT_DIR$/web-upload-servlet3" />
+    <file type="web" url="file://$PROJECT_DIR$/web-verificationcode" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java-fx/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/javaFxDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/uploadFileAndImage/pom.xml" />
       </set>
     </option>
   </component>

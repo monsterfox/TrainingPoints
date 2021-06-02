@@ -3,13 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TrainingPoints.iml" filepath="$PROJECT_DIR$/TrainingPoints.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javaFxDemo/javaFxDemo.iml" filepath="$PROJECT_DIR$/javaFxDemo/javaFxDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jspUpload/jspUpload.iml" filepath="$PROJECT_DIR$/jspUpload/jspUpload.iml" />
-      <module fileurl="file://$PROJECT_DIR$/richTextEditor/richTextEditor.iml" filepath="$PROJECT_DIR$/richTextEditor/richTextEditor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/servlet3Upload/servlet3Upload.iml" filepath="$PROJECT_DIR$/servlet3Upload/servlet3Upload.iml" />
-      <module fileurl="file://$PROJECT_DIR$/uploadFileAndImage/uploadFileAndImage.iml" filepath="$PROJECT_DIR$/uploadFileAndImage/uploadFileAndImage.iml" />
-      <module fileurl="file://$PROJECT_DIR$/verificationCode/verificationCode.iml" filepath="$PROJECT_DIR$/verificationCode/verificationCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-fx/java-fx.iml" filepath="$PROJECT_DIR$/java-fx/java-fx.iml" />
       <module fileurl="file://$PROJECT_DIR$/web-paginator/web-paginator.iml" filepath="$PROJECT_DIR$/web-paginator/web-paginator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-rte/web-rte.iml" filepath="$PROJECT_DIR$/web-rte/web-rte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-upload-apacheplugins/web-upload-apacheplugins.iml" filepath="$PROJECT_DIR$/web-upload-apacheplugins/web-upload-apacheplugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-upload-servlet3/web-upload-servlet3.iml" filepath="$PROJECT_DIR$/web-upload-servlet3/web-upload-servlet3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-verificationcode/web-verificationcode.iml" filepath="$PROJECT_DIR$/web-verificationcode/web-verificationcode.iml" />
     </modules>
   </component>
 </project>

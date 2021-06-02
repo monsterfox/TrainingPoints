@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="jspUpload:war">
-    <output-path>$PROJECT_DIR$/jspUpload/target</output-path>
-    <root id="archive" name="TrainingPoints.war">
-      <element id="artifact" artifact-name="jspUpload:war exploded" />
-    </root>
-  </artifact>
-</component>
