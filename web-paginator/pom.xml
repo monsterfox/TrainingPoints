@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>paginator</artifactId>
+    <artifactId>web-paginator</artifactId>
     <packaging>war</packaging>
 
     <dependencies>

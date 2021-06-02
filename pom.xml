@@ -12,7 +12,7 @@
         <module>jspUpload</module>
         <module>servlet3Upload</module>
         <module>uploadFileAndImage</module>
-        <module>paginator</module>
+        <module>web-paginator</module>
         <module>verificationCode</module>
         <module>richTextEditor</module>
     </modules>

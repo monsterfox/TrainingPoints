@@ -12,6 +12,7 @@
         <module name="servlet3Upload" />
         <module name="uploadFileAndImage" />
         <module name="verificationCode" />
+        <module name="web-paginator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="TrainingPoints" target="1.8" />
       <module name="uploadFileAndImage" target="1.8" />
       <module name="verificationCode" target="1.8" />
+      <module name="web-paginator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

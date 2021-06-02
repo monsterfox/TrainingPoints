@@ -2,11 +2,11 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/jspUpload" />
-    <file type="web" url="file://$PROJECT_DIR$/paginator" />
     <file type="web" url="file://$PROJECT_DIR$/richTextEditor" />
     <file type="web" url="file://$PROJECT_DIR$/servlet3Upload" />
     <file type="web" url="file://$PROJECT_DIR$/uploadFileAndImage" />
     <file type="web" url="file://$PROJECT_DIR$/verificationCode" />
+    <file type="web" url="file://$PROJECT_DIR$/web-paginator" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

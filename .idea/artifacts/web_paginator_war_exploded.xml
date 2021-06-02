@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="paginator:war exploded">
-    <output-path>$PROJECT_DIR$/paginator/target/TrainingPoints</output-path>
+  <artifact type="exploded-war" name="web-paginator:war exploded">
+    <output-path>$PROJECT_DIR$/web-paginator/target/TrainingPoints</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
