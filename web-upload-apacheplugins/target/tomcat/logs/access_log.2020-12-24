@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [24/Dec/2020:16:37:29 +0800] "GET /jspUpload HTTP/1.1" 302 - http-bio-8088-exec-1 0
+0:0:0:0:0:0:0:1 - - [24/Dec/2020:16:37:30 +0800] "GET /jspUpload/ HTTP/1.1" 200 1139 http-bio-8088-exec-4 876
+0:0:0:0:0:0:0:1 - - [24/Dec/2020:16:37:30 +0800] "GET /style/images/blank.gif HTTP/1.1" 404 - http-bio-8088-exec-5 0
+0:0:0:0:0:0:0:1 - - [24/Dec/2020:16:37:52 +0800] "POST /jspUpload/uploadServlet HTTP/1.1" 200 262 http-bio-8088-exec-6 116
+0:0:0:0:0:0:0:1 - - [24/Dec/2020:16:41:24 +0800] "GET /jspUpload/ HTTP/1.1" 200 1139 http-bio-8088-exec-8 6
+0:0:0:0:0:0:0:1 - - [24/Dec/2020:16:41:24 +0800] "GET /style/images/blank.gif HTTP/1.1" 404 - http-bio-8088-exec-8 0

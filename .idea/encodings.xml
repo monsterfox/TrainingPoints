@@ -3,11 +3,25 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-fx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-fx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-fx/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-fxdemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-paginator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-paginator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-paginator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-rte" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-rte/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-rte/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-upload-apacheplugins" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-upload-apacheplugins/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-upload-apacheplugins/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-upload-servlet3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-upload-servlet3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-upload-servlet3/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/web-verificationcode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-verificationcode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-verificationcode/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:33:45 +0800] "GET /servlet3Upload HTTP/1.1" 302 - http-bio-8088-exec-1 0
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:33:46 +0800] "GET /servlet3Upload/ HTTP/1.1" 200 427 http-bio-8088-exec-5 544
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:33:56 +0800] "GET /servlet3Upload/addSource.jsp HTTP/1.1" 200 1818 http-bio-8088-exec-6 143
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:33:56 +0800] "GET /servlet3Upload/admin/resource/css/style.css HTTP/1.1" 404 1037 http-bio-8088-exec-7 1
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:34:12 +0800] "POST /servlet3Upload/sourceServlet?op=uploadSource HTTP/1.1" 200 113 http-bio-8088-exec-8 592
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:34:50 +0800] "GET /servlet3Upload/sourceServlet?op=findAllSources HTTP/1.1" 200 6315 http-bio-8088-exec-9 124
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:34:50 +0800] "GET /servlet3Upload/admin/resource/css/style.css HTTP/1.1" 404 1037 http-bio-8088-exec-10 2
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:34:50 +0800] "GET /servlet3Upload/admin/resource/js/jquery-1.7.2.min.js HTTP/1.1" 404 1055 http-bio-8088-exec-9 1
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:34:50 +0800] "GET /servlet3Upload/admin/resource/img/t06.png HTTP/1.1" 404 1033 http-bio-8088-exec-10 1
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:34:50 +0800] "GET /servlet3Upload/admin/resource/css/style.css HTTP/1.1" 404 1037 http-bio-8088-exec-10 1
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:34:50 +0800] "GET /servlet3Upload/admin/resource/img/ticon.png HTTP/1.1" 404 1037 http-bio-8088-exec-9 1
+0:0:0:0:0:0:0:1 - - [25/Dec/2020:15:35:08 +0800] "GET /servlet3Upload/sourceServlet?op=downloadSource&id=3 HTTP/1.1" 200 - http-bio-8088-exec-9 19

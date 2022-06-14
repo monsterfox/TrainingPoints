@@ -1,6 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="war" name="web-upload-apacheplugins:war">
     <output-path>$PROJECT_DIR$/web-upload-apacheplugins/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>web-upload-apacheplugins</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="archive" name="TrainingPoints.war">
       <element id="artifact" artifact-name="web-upload-apacheplugins:war exploded" />
     </root>

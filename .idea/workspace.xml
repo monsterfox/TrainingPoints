@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="uploadFileAndImage:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51bed531-c6ce-4b0e-953b-82b74e0f48a8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/Login.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/controller/AddAddressController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/controller/AddressListController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/controller/RootLayoutController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/css/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/data/Container.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/domain/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/img/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/js/fxml_login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/view/RootLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/view/addAddress.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/view/addressList.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-fx/target/classes/com/foxbill/view/login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/com/foxbill/dao/BookDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/com/foxbill/domain/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/com/foxbill/domain/PageModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/com/foxbill/servlet/BookServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/com/foxbill/util/DBUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/com/foxbill/util/DruidUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/classes/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/tomcat/logs/access_log.2021-05-31" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-paginator/target/tomcat/logs/access_log.2021-06-02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/classes/com/foxbill/dao/ContentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/classes/com/foxbill/pojo/Content.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/classes/com/foxbill/servlet/ContentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/classes/com/foxbill/servlet/ImgUploadServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/classes/com/foxbill/util/DruidUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/classes/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/classes/t_content.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/logs/access_log.2020-12-28" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/logs/access_log.2020-12-29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/logs/access_log.2020-12-31" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/work/Tomcat/localhost/richTextEditor/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/work/Tomcat/localhost/richTextEditor/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/work/Tomcat/localhost/richTextEditor/org/apache/jsp/show_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-rte/target/tomcat/work/Tomcat/localhost/richTextEditor/org/apache/jsp/show_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/src/main/webapp/upload/d9125857-273e-4e35-bd39-f0c2b757a3d8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/classes/com/foxbill/controller/UploadFileServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/classes/com/foxbill/controller/UploadImageServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/logs/access_log.2020-12-24" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/logs/access_log.2020-12-25" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/logs/access_log.2020-12-29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/logs/access_log.2021-05-31" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/logs/access_log.2021-06-02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/logs/access_log.2021-06-15" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/message_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/message_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadFile_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadFile_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadFilemessage_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadFilemessage_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadImage_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadImage_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadImagemessage_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/jspUpload/org/apache/jsp/uploadImagemessage_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/web-upload-apacheplugins/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/web-upload-apacheplugins/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/web-upload-apacheplugins/org/apache/jsp/uploadImage_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/web-upload-apacheplugins/org/apache/jsp/uploadImage_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/web-upload-apacheplugins/org/apache/jsp/uploadImagemessage_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-apacheplugins/target/tomcat/work/Tomcat/localhost/web-upload-apacheplugins/org/apache/jsp/uploadImagemessage_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/dao/SourceDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/dao/impl/SourceDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/entity/Source.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/service/SourceService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/service/impl/SourceServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/servlet/SourceServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/servlet/UploadServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/cn/javabs/demo/utils/DruidUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/classes/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/logs/access_log.2020-12-25" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/logs/access_log.2020-12-29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/logs/access_log.2021-05-31" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/addSource_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/addSource_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/message_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/message_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/sourceList_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-upload-servlet3/target/tomcat/work/Tomcat/localhost/servlet3Upload/org/apache/jsp/sourceList_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/conf/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/logs/access_log.2020-12-28" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/logs/access_log.2021-05-31" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image0_005f0_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image0_005f0_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image0_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image0_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image1_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image1_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image2_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image2_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image3_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image3_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image4_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/image4_jsp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-verificationcode/target/tomcat/work/Tomcat/localhost/verificationCode/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_paginator_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_paginator_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_paginator_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_paginator_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_rte_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_rte_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_rte_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_rte_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_upload_apacheplugins_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_upload_apacheplugins_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_upload_apacheplugins_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_upload_apacheplugins_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_upload_servlet3_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_upload_servlet3_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_upload_servlet3_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_upload_servlet3_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_verificationcode_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_verificationcode_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_verificationcode_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/web_verificationcode_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-paginator/web-paginator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-paginator/web-paginator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-upload-apacheplugins/web-upload-apacheplugins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-upload-apacheplugins/web-upload-apacheplugins.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-upload-servlet3/web-upload-servlet3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-upload-servlet3/web-upload-servlet3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-verificationcode/web-verificationcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/web-verificationcode/web-verificationcode.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>config.image_previewText</find>
+      <find>upload</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/verificationCode/src/main/webapp/image0_0.jsp" />
+        <option value="$PROJECT_DIR$/verificationCode/src/main/webapp/image1.jsp" />
+        <option value="$PROJECT_DIR$/verificationCode/src/main/webapp/image3.jsp" />
+        <option value="$PROJECT_DIR$/verificationCode/src/main/webapp/image0.jsp" />
+        <option value="$PROJECT_DIR$/verificationCode/src/main/webapp/image4.jsp" />
+        <option value="$PROJECT_DIR$/verificationCode/readme.md" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/java/com/foxbill/util/DruidUtils.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/java/com/foxbill/pojo/Content.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/pom.xml" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/java/com/foxbill/dao/ContentDao.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/java/com/foxbill/servlet/AddContentServlet.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/webapp/show.jsp" />
+        <option value="$PROJECT_DIR$/richTextEditor/readme.md" />
+        <option value="$PROJECT_DIR$/servlet3Upload/src/main/java/cn/javabs/demo/servlet/UploadServlet.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/java/com/foxbill/servlet/ImgUploadAction.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/java/com/foxbill/servlet/ContentServlet.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/java/com/foxbill/servlet/ImgUploadServlet.java" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/webapp/ckeditor/plugins/image/dialogs/image.js" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/webapp/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/讲解资料/JavaWeb常见功能讲解.md" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/main/java/com/foxbill/Login.java" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/view/login.fxml" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/view/RootLayout.fxml" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/view/addressList.fxml" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/view/addAddress.fxml" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/Login.java" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/controller/AddressListController.java" />
+        <option value="$PROJECT_DIR$/javaFxDemo/src/com/foxbill/controller/AddAddressController.java" />
+        <option value="$PROJECT_DIR$/verificationCode/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/uploadFileAndImage/uploadFileAndImage.iml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/servlet3Upload/src/main/java/cn/javabs/demo/sql/testsql" />
+        <option value="$PROJECT_DIR$/servlet3Upload/src/main/java/cn/javabs/demo/sql/testsql.sql" />
+        <option value="$PROJECT_DIR$/richTextEditor/src/main/resources/t_content.sql" />
+        <option value="$PROJECT_DIR$/uploadFileAndImage/readme.md" />
+        <option value="$PROJECT_DIR$/web-paginator/pom.xml" />
+        <option value="$PROJECT_DIR$/jspUpload/readme.md" />
+        <option value="$PROJECT_DIR$/web-upload-servlet3/pom.xml" />
+        <option value="$PROJECT_DIR$/web-verificationcode/pom.xml" />
+        <option value="$PROJECT_DIR$/web-rte/pom.xml" />
+        <option value="$PROJECT_DIR$/web-upload-apacheplugins/pom.xml" />
+        <option value="$PROJECT_DIR$/web-upload-apacheplugins/readme.md" />
+        <option value="$PROJECT_DIR$/java-fx/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java-fx/src/main/java/com/foxbill/Login.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/web-upload-apacheplugins/src/main/java/com/foxbill/controller/UploadImageServlet.java" />
+        <option value="$PROJECT_DIR$/web-upload-servlet3/readme.md" />
+        <option value="$PROJECT_DIR$/web-upload-apacheplugins/src/main/webapp/uploadImage.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="web-upload-apacheplugins" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="web-upload-apacheplugins" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="web-upload-apacheplugins" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="tomcat7" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="web-upload-apacheplugins" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="web-upload-apacheplugins" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="commons-fileupload:commons-fileupload:1.3.2" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="840" />
+    <option name="height" value="1010" />
+  </component>
+  <component name="ProjectId" id="2AXyXJNxufgm8nVSwzTEvvew8L5" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TrainingPoints" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrainingPoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrainingPoints" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrainingPoints" type="462c0819:PsiDirectoryNode" />
+              <item name="讲解资料" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "vcs.Mercurial"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\billfox\Prj\TrainingPoints\servlet3Upload\src\main\resources" />
+      <recent name="E:\billfox\Prj\TrainingPoints\paginator\src\main\resources" />
+      <recent name="E:\billfox\Prj\TrainingPoints\讲解资料" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.foxbill.util" />
+      <recent name="com.foxbill.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\billfox\Prj\TrainingPoints\java-fx\src\main\resources\com\foxbill\js" />
+      <recent name="E:\billfox\Prj\TrainingPoints\java-fx\src\main\resources\com\foxbill\img" />
+      <recent name="E:\billfox\Prj\TrainingPoints\java-fx\src\main\resources\com\foxbill\css" />
+      <recent name="E:\billfox\Prj\TrainingPoints\java-fx\src\main\resources\com\foxbill\view" />
+      <recent name="E:\billfox\Prj\TrainingPoints\java-fx\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.foxbill.Login" />
+      <module name="java-fx" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.foxbill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="javaFxDemo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51bed531-c6ce-4b0e-953b-82b74e0f48a8" name="Default" comment="" />
+      <created>1608798965515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608798965515</updated>
+      <workItem from="1608798966798" duration="1719000" />
+      <workItem from="1608856162309" duration="3728000" />
+      <workItem from="1608859922159" duration="1655000" />
+      <workItem from="1608878784645" duration="6776000" />
+      <workItem from="1609042002030" duration="588000" />
+      <workItem from="1609043396985" duration="12000" />
+      <workItem from="1609115141991" duration="116000" />
+      <workItem from="1609118136672" duration="10178000" />
+      <workItem from="1609203585818" duration="3071000" />
+      <workItem from="1609209197728" duration="1632000" />
+      <workItem from="1609224791639" duration="1130000" />
+      <workItem from="1609373355807" duration="2172000" />
+      <workItem from="1609397458398" duration="7672000" />
+      <workItem from="1609561349641" duration="441000" />
+      <workItem from="1609561822569" duration="25000" />
+      <workItem from="1609565184011" duration="29000" />
+      <workItem from="1609805207419" duration="2861000" />
+      <workItem from="1609916982350" duration="4000" />
+      <workItem from="1609981830361" duration="598000" />
+      <workItem from="1610326634120" duration="144000" />
+      <workItem from="1610326797639" duration="1412000" />
+      <workItem from="1610353725581" duration="253000" />
+      <workItem from="1610354311143" duration="6000" />
+      <workItem from="1615447909444" duration="54000" />
+      <workItem from="1617334126401" duration="731000" />
+      <workItem from="1618973511119" duration="120000" />
+      <workItem from="1621472418615" duration="4970000" />
+      <workItem from="1621578614836" duration="6016000" />
+      <workItem from="1621823524760" duration="629000" />
+      <workItem from="1622444780516" duration="4676000" />
+      <workItem from="1622505841184" duration="306000" />
+      <workItem from="1622507751925" duration="2000" />
+      <workItem from="1622594089304" duration="2341000" />
+      <workItem from="1622597140208" duration="4359000" />
+      <workItem from="1623402326582" duration="221000" />
+      <workItem from="1623715803061" duration="2546000" />
+      <workItem from="1623803656501" duration="2725000" />
+      <workItem from="1624589272479" duration="708000" />
+      <workItem from="1624603736689" duration="706000" />
+      <workItem from="1653620118703" duration="739000" />
+      <workItem from="1654733642763" duration="771000" />
+      <workItem from="1655170267035" duration="2293000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改文件上传案例">
+      <created>1608886566554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608886566554</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修改文件上传案例">
+      <created>1608886642262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608886642262</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改文件上传案例">
+      <created>1608887290022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608887290022</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更新“验证码”案例">
+      <created>1609122675723</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609122675723</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增“富文本编辑器”案例">
+      <created>1609125999979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609125999979</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增“富文本编辑器”案例">
+      <created>1609126198319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609126198319</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新“功能讲解”">
+      <created>1609397524211</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609397524211</updated>
+    </task>
+    <task id="LOCAL-00008" summary="更新“功能讲解”">
+      <created>1609405558084</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609405558084</updated>
+    </task>
+    <task id="LOCAL-00009" summary="更新“功能讲解”">
+      <created>1609806296839</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609806296839</updated>
+    </task>
+    <task id="LOCAL-00010" summary="更新“功能讲解”">
+      <created>1609807109459</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609807109459</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge branch 'master' of https://gitee.com/monstercode/TrainingPoints&#10;&#10;# Conflicts:&#10;#&#9;讲解资料/JavaWeb常见功能讲解.md">
+      <created>1621472942035</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621472942036</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge branch 'master' of https://gitee.com/monstercode/TrainingPoints&#10;&#10;# Conflicts:&#10;#&#9;讲解资料/JavaWeb常见功能讲解.md">
+      <created>1621474249485</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1621474249485</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Merge branch 'master' of https://gitee.com/monstercode/TrainingPoints&#10;&#10;# Conflicts:&#10;#&#9;讲解资料/JavaWeb常见功能讲解.md">
+      <created>1621494022333</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621494022333</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Merge branch 'master' of https://gitee.com/monstercode/TrainingPoints&#10;&#10;# Conflicts:&#10;#&#9;讲解资料/JavaWeb常见功能讲解.md">
+      <created>1621584209670</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1621584209670</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修复小bug">
+      <created>1622446827432</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622446827432</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修复小bug">
+      <created>1622447729195</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622447729195</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修复小bug">
+      <created>1622448415525</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622448415525</updated>
+    </task>
+    <task id="LOCAL-00018" summary="更新说明文档">
+      <created>1622448761417</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1622448761417</updated>
+    </task>
+    <task id="LOCAL-00019" summary="更新说明文档">
+      <created>1622448941543</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622448941543</updated>
+    </task>
+    <task id="LOCAL-00020" summary="更新说明文档">
+      <created>1622449122934</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1622449122934</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更新uploadFileAndImage的说明文档">
+      <created>1622594971493</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1622594971493</updated>
+    </task>
+    <task id="LOCAL-00022" summary="修改paginator模块名">
+      <created>1622595280132</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1622595280132</updated>
+    </task>
+    <task id="LOCAL-00023" summary="更新所有模块名">
+      <created>1622599308970</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1622599308970</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="78842000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30440098" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2247191" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5539326" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21332519" sideWeight="0.486747" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18765281" sideWeight="0.51325303" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43258426" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30440098" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43258426" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2247191" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5539326" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17665036" sideWeight="0.486747" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18765281" sideWeight="0.51325303" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改文件上传案例" />
+    <MESSAGE value="更新“验证码”案例" />
+    <MESSAGE value="新增“富文本编辑器”案例" />
+    <MESSAGE value="更新“功能讲解”" />
+    <MESSAGE value="Merge branch 'master' of https://gitee.com/monstercode/TrainingPoints&#10;&#10;# Conflicts:&#10;#&#9;讲解资料/JavaWeb常见功能讲解.md" />
+    <MESSAGE value="修复小bug" />
+    <MESSAGE value="更新说明文档" />
+    <MESSAGE value="更新uploadFileAndImage的说明文档" />
+    <MESSAGE value="修改paginator模块名" />
+    <MESSAGE value="更新所有模块名" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新所有模块名" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/js/fxml_login.js" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/controller/RootLayoutController.java" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/controller/AddressListController.java" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/view/login.fxml" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/view/RootLayout.fxml" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/controller/LoginController.java" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/data/Container.java" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/view/addAddress.fxml" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/view/addressList.fxml" />
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/controller/AddAddressController.java" />
+    <entry file="file://$PROJECT_DIR$/web-verificationcode/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="99" column="51" lean-forward="true" selection-start-line="99" selection-start-column="51" selection-end-line="99" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploadFileAndImage/uploadFileAndImage.iml" />
+    <entry file="file://$PROJECT_DIR$/web-upload-apacheplugins/src/main/java/com/foxbill/controller/UploadFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-paginator/src/main/resources/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-paginator/src/main/java/com/foxbill/util/DruidUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-paginator/src/main/java/com/foxbill/util/DBUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-rte/src/main/resources/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-rte/src/main/resources/t_content.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-paginator/src/main/resources/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-servlet3/src/main/resources/druid.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-servlet3/src/main/resources/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploadFileAndImage/src/main/webapp/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/uploadFileAndImage/src/main/webapp/images.jsp" />
+    <entry file="file://$PROJECT_DIR$/uploadFileAndImage/readme.md" />
+    <entry file="file://$PROJECT_DIR$/uploadFileAndImage/src/main/java/com/foxbill/controller/SmartUploadOne.java" />
+    <entry file="file://$PROJECT_DIR$/uploadFileAndImage/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/讲解资料/JavaWeb常见功能讲解.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-servlet3/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-verificationcode/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-rte/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/readme.md" />
+    <entry file="file://$PROJECT_DIR$/java-fx/src/main/java/com/foxbill/js/fxml_login.js" />
+    <entry file="file://$PROJECT_DIR$/web-paginator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fxdemo/src/com/foxbill/Login.java" />
+    <entry file="file://$PROJECT_DIR$/java-fx/src/main/resources/com/foxbill/view/addAddress.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fx/src/main/resources/com/foxbill/css/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fx/src/main/resources/com/foxbill/js/fxml_login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fx/src/main/java/com/foxbill/controller/AddAddressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="77" lean-forward="false" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fx/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fx/src/main/java/com/foxbill/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-fx/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-apacheplugins/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="644">
+            <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-apacheplugins/src/main/webapp/uploadImage2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-apacheplugins/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-apacheplugins/src/main/java/com/foxbill/controller/UploadImageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-servlet3/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-apacheplugins/src/main/webapp/uploadImage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-upload-apacheplugins/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>javaFxDemo:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31609195" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31609195" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TrainingPoints</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31609195" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:druid:1.1.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.31609195" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

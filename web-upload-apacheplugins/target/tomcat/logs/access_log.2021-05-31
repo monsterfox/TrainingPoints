@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [31/May/2021:15:33:37 +0800] "GET /jspUpload HTTP/1.1" 302 - http-bio-8088-exec-1 0
+0:0:0:0:0:0:0:1 - - [31/May/2021:15:33:37 +0800] "GET /jspUpload/ HTTP/1.1" 200 303 http-bio-8088-exec-3 129
+0:0:0:0:0:0:0:1 - - [31/May/2021:15:33:39 +0800] "GET /jspUpload/uploadImage.jsp HTTP/1.1" 200 2420 http-bio-8088-exec-4 31
+0:0:0:0:0:0:0:1 - - [31/May/2021:15:33:39 +0800] "GET /jspUpload/images/upload.jpg HTTP/1.1" 200 21611 http-bio-8088-exec-5 3
+0:0:0:0:0:0:0:1 - - [31/May/2021:15:33:47 +0800] "POST /jspUpload/uploadImage HTTP/1.1" 200 261 http-bio-8088-exec-6 677

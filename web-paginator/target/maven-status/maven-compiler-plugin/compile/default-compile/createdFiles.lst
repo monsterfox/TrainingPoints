@@ -1,0 +1,6 @@
+com\foxbill\util\DruidUtils.class
+com\foxbill\util\DBUtil.class
+com\foxbill\dao\BookDao.class
+com\foxbill\servlet\BookServlet.class
+com\foxbill\domain\Book.class
+com\foxbill\domain\PageModel.class

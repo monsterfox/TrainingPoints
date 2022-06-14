@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:09:34:46 +0800] "GET /web-upload-apacheplugins HTTP/1.1" 302 - http-bio-8088-exec-1 0
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:09:34:47 +0800] "GET /web-upload-apacheplugins/ HTTP/1.1" 200 303 http-bio-8088-exec-3 960
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:09:34:57 +0800] "GET /web-upload-apacheplugins/uploadImage.jsp HTTP/1.1" 200 2420 http-bio-8088-exec-4 120
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:09:34:57 +0800] "GET /web-upload-apacheplugins/images/upload.jpg HTTP/1.1" 200 21611 http-bio-8088-exec-5 32
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:09:35:26 +0800] "GET /ThesisPrj/addThesis.jsp HTTP/1.1" 404 - http-bio-8088-exec-6 0
+0:0:0:0:0:0:0:1 - - [15/Jun/2021:09:37:08 +0800] "POST /web-upload-apacheplugins/uploadImage HTTP/1.1" 200 261 http-bio-8088-exec-8 219
